@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTMG 210-274] Memory 'interval_normalizdEe' is read-only, switch it to a ROM." projectName="FIRIn2Features" solutionName="solution1" date="2025-03-26T15:57:09.464+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'interval_normalization' to 'interval_normalizati' (FIRIn2Features/FIRIn2Features.cpp:15:47)" projectName="FIRIn2Features" solutionName="solution1" date="2025-03-26T15:57:05.901+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file FIRIn2Features/FIRIn2Features.cpp" projectName="FIRIn2Features" solutionName="solution1" date="2025-03-26T15:56:59.996+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-111] Static variables and non-static stream cannot be used inside a dataflow region: FIRIn2Features/FIRIn2Features.cpp:164:28" projectName="FIRIn2Features" solutionName="solution1" date="2025-03-26T15:56:48.697+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] In file included from FIRIn2Features/FIRIn2Features.cpp:1:&#xD;&#xA;FIRIn2Features/FIRIn2Features.cpp:12:24: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]&#xD;&#xA;    ap_uint&lt;10> wr_ptr = 0;&#xD;&#xA;                       ^&#xD;&#xA;1 warning generated." projectName="FIRIn2Features" solutionName="solution1" date="2025-03-26T15:56:48.689+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'feature_extractor_ip_ap_sitofp_2_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="FIRIn2Features" solutionName="solution1" date="2025-03-26T16:20:40.057+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'feature_extractor_ip_ap_fsub_2_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="FIRIn2Features" solutionName="solution1" date="2025-03-26T16:20:36.926+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'feature_extractor_ip_ap_fptrunc_0_no_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="FIRIn2Features" solutionName="solution1" date="2025-03-26T16:20:34.310+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'feature_extractor_ip_ap_fpext_0_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="FIRIn2Features" solutionName="solution1" date="2025-03-26T16:20:31.077+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'feature_extractor_ip_ap_fmul_1_max_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="FIRIn2Features" solutionName="solution1" date="2025-03-26T16:20:27.986+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'feature_extractor_ip_ap_fdiv_10_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="FIRIn2Features" solutionName="solution1" date="2025-03-26T16:20:24.414+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'feature_extractor_ip_ap_fcmp_0_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="FIRIn2Features" solutionName="solution1" date="2025-03-26T16:20:21.319+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'feature_extractor_ip_ap_faddfsub_2_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="FIRIn2Features" solutionName="solution1" date="2025-03-26T16:20:18.238+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'feature_extractor_ip_ap_dmul_3_max_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="FIRIn2Features" solutionName="solution1" date="2025-03-26T16:20:15.291+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'feature_extractor_ip_ap_dadd_3_full_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="FIRIn2Features" solutionName="solution1" date="2025-03-26T16:20:10.655+0800" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

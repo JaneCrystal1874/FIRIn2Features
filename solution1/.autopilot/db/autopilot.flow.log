@@ -1,0 +1,1233 @@
+INFO-FLOW: Workspace E:/SEU/Graduation_Prj/FIRIn2Features/solution1 opened at Wed Mar 26 15:56:37 +0800 2025
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib F:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq 
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.118 sec.
+Command     ap_source done; 0.119 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib F:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020-clg400-2 
+Execute       ap_part_info -name xc7z020-clg400-2 -data single -quiet 
+Command       ap_part_info done; 0.616 sec.
+Execute       ap_part_info -name xc7z020-clg400-2 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-2 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         ap_part_info -data single -name xc7z020-clg400-2 
+Execute         ap_part_info -name xc7z020-clg400-2 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info 
+Execute         config_chip_info -quiet -speed medium 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-2'
+Execute       ap_part_info -name xc7z020-clg400-2 -data info 
+Execute       get_default_platform 
+Command     set_part done; 0.723 sec.
+Execute     ap_part_info -data single -name xc7z020-clg400-2 
+Execute     ap_part_info -name xc7z020-clg400-2 -data resources 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info 
+Execute     config_chip_info -quiet -speed medium 
+Execute     config_export -description=features_extractor 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 0.887 sec.
+Execute   set_part xc7z020-clg400-2 -tool vivado 
+Execute     ap_part_info -name xc7z020-clg400-2 -data single -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info 
+Execute     add_library xilinx/zynq/zynq:xc7z020:-clg400:-2 
+Execute       get_default_platform 
+Execute       license_isbetapart xc7z020 
+Command       license_isbetapart done; error code: 1; 
+Execute       ap_part_info -data single -name xc7z020-clg400-2 
+Execute       ap_part_info -name xc7z020-clg400-2 -data resources 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info 
+Execute       config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info 
+Execute       config_chip_info -quiet -speed medium 
+Execute     add_library xilinx/zynq/zynq_fpv6 
+Execute       get_default_platform 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info 
+Execute     get_default_platform 
+Execute   create_clock -period 10 -name default 
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute   config_export -description features_extractor -format ip_catalog -rtl verilog 
+Execute   csynth_design 
+Execute     get_config_compile -dump_cfg 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file 'FIRIn2Features/FIRIn2Features.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling FIRIn2Features/FIRIn2Features.cpp as C++
+Execute       ap_part_info -name xc7z020-clg400-2 -data info 
+Execute       is_encrypted FIRIn2Features/FIRIn2Features.cpp 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "F:/Xilinx/Vivado/2019.1/msys" -hls  -fno-exceptions  -D__llvm__  -E "FIRIn2Features/FIRIn2Features.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "F:/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "F:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/FIRIn2Features.pp.0.cpp" 
+INFO-FLOW: exec F:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain F:/Xilinx/Vivado/2019.1/msys -hls -fno-exceptions -D__llvm__ -E FIRIn2Features/FIRIn2Features.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I F:/Xilinx/Vivado/2019.1/common/technology/autopilot -I F:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/FIRIn2Features.pp.0.cpp
+Command       clang done; 2.035 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/FIRIn2Features.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec F:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/FIRIn2Features.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.53 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/FIRIn2Features.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "F:/Xilinx/Vivado/2019.1/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "F:/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "F:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/FIRIn2Features.pp.0.cpp"  -o "E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec F:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain F:/Xilinx/Vivado/2019.1/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I F:/Xilinx/Vivado/2019.1/common/technology/autopilot -I F:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/FIRIn2Features.pp.0.cpp -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/useless.bc
+WARNING: [HLS 200-40] In file included from FIRIn2Features/FIRIn2Features.cpp:1:
+FIRIn2Features/FIRIn2Features.cpp:12:24: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    ap_uint<10> wr_ptr = 0;
+                       ^
+1 warning generated.
+Command       clang done; 3.447 sec.
+INFO-FLOW: Done: GCC PP time: 7 seconds per iteration
+Execute       source F:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source F:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source F:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/FIRIn2Features.pp.0.cpp std=gnu++98 -directive=E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec F:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/FIRIn2Features.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.887 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/FIRIn2Features.pp.0.cpp std=gnu++98 -directive=E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec F:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/all.directive.json -quiet -fix-errors E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/FIRIn2Features.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.846 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr F:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/xilinx-dataflow-lawyer.FIRIn2Features.pp.0.cpp.diag.yml E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/FIRIn2Features.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/xilinx-dataflow-lawyer.FIRIn2Features.pp.0.cpp.out.log 2> E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/xilinx-dataflow-lawyer.FIRIn2Features.pp.0.cpp.err.log 
+Command       ap_eval done; 1.557 sec.
+Execute       source F:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute         source F:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+WARNING: [HLS 214-111] Static variables and non-static stream cannot be used inside a dataflow region: FIRIn2Features/FIRIn2Features.cpp:164:28
+Execute       send_msg_by_id WARNING @200-471@%s%s 1 FIRIn2Features/FIRIn2Features.cpp 
+WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file FIRIn2Features/FIRIn2Features.cpp
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/FIRIn2Features.pp.0.cpp std=gnu++98 
+Execute         ap_eval exec -ignorestderr F:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/tidy-3.1.FIRIn2Features.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/FIRIn2Features.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/tidy-3.1.FIRIn2Features.pp.0.cpp.out.log 2> E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/tidy-3.1.FIRIn2Features.pp.0.cpp.err.log 
+Command         ap_eval done; 1.123 sec.
+Execute         ap_eval exec -ignorestderr F:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/FIRIn2Features.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/xilinx-legacy-rewriter.FIRIn2Features.pp.0.cpp.out.log 2> E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/xilinx-legacy-rewriter.FIRIn2Features.pp.0.cpp.err.log 
+Command         ap_eval done; 1.592 sec.
+Command       tidy_31 done; 2.724 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 5.2 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/FIRIn2Features.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec F:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/FIRIn2Features.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.107 sec.
+Execute       ap_part_info -name xc7z020-clg400-2 -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/FIRIn2Features.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain F:/Xilinx/Vivado/2019.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/FIRIn2Features.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "F:/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "F:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/FIRIn2Features.bc" 
+INFO-FLOW: exec F:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain F:/Xilinx/Vivado/2019.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/FIRIn2Features.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I F:/Xilinx/Vivado/2019.1/common/technology/autopilot -I F:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/FIRIn2Features.bc
+Command       clang done; 4.431 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/FIRIn2Features.g.bc -hls-opt -except-internalize feature_extractor_ip -LF:/Xilinx/Vivado/2019.1/win64/lib -lhlsm -lhlsmc++ -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/a.g 
+Command       llvm-ld done; 2.748 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:23 . Memory (MB): peak = 185.062 ; gain = 94.039
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:23 . Memory (MB): peak = 185.062 ; gain = 94.039
+Execute       get_config_sdx -target 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/a.pp.bc -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/a.pp.0.bc -f 
+Command         transform done; 0.237 sec.
+Execute         llvm-ld E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/a.pp.0.bc -disable-opt -LF:/Xilinx/Vivado/2019.1/win64/lib -lfloatconversion -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/a.g.0 
+Command         llvm-ld done; 1.75 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top feature_extractor_ip -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/a.g.0.bc -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+Command         transform done; 0.964 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:26 . Memory (MB): peak = 223.059 ; gain = 132.035
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/a.g.1.bc -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+INFO: [XFORM 203-602] Inlining function 'CircularBuffer::write' into 'peak_detection' (FIRIn2Features/FIRIn2Features.cpp:34) automatically.
+INFO: [XFORM 203-602] Inlining function 'CircularBuffer::read' into 'peak_detection' (FIRIn2Features/FIRIn2Features.cpp:41) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' into 'generic_cast_IEEE754<int, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, float>' into '__hls_fptosi_float_i32' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:51) automatically.
+INFO: [XFORM 203-602] Inlining function 'CircularBuffer::read' into 'interval_normalization' (FIRIn2Features/FIRIn2Features.cpp:90) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_float_i32' into 'compute_features' (FIRIn2Features/FIRIn2Features.cpp:124) automatically.
+Command         transform done; 0.493 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/a.g.2.prechk.bc -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+Command         transform done; 0.417 sec.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:27 . Memory (MB): peak = 282.406 ; gain = 191.383
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/a.g.1.bc to E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/a.o.1.bc -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-602] Inlining function 'CircularBuffer::write' into 'peak_detection' (FIRIn2Features/FIRIn2Features.cpp:34) automatically.
+INFO: [XFORM 203-602] Inlining function 'CircularBuffer::read' into 'peak_detection' (FIRIn2Features/FIRIn2Features.cpp:41) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' into 'generic_cast_IEEE754<int, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, float>' into '__hls_fptosi_float_i32' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:51) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_float_i32' into 'interval_normalization' (FIRIn2Features/FIRIn2Features.cpp:87) automatically.
+INFO: [XFORM 203-602] Inlining function 'CircularBuffer::read' into 'interval_normalization' (FIRIn2Features/FIRIn2Features.cpp:90) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_float_i32' into 'compute_features' (FIRIn2Features/FIRIn2Features.cpp:124) automatically.
+INFO: [XFORM 203-712] Applying dataflow to function 'feature_extractor_ip', detected/extracted 3 process function(s): 
+	 'peak_detection'
+	 'interval_normalization'
+	 'compute_features'.
+Command         transform done; 0.692 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/a.o.1.tmp.bc -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (FIRIn2Features/FIRIn2Features.cpp:65:9) to (FIRIn2Features/FIRIn2Features.cpp:79:9) in function 'interval_normalization'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (FIRIn2Features/FIRIn2Features.cpp:124:9) to (FIRIn2Features/FIRIn2Features.cpp:123:45) in function 'compute_features'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (FIRIn2Features/FIRIn2Features.cpp:130:9) to (FIRIn2Features/FIRIn2Features.cpp:129:29) in function 'compute_features'... converting 3 basic blocks.
+Command         transform done; 0.504 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:28 . Memory (MB): peak = 365.660 ; gain = 274.637
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -ptrLegalization -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/a.o.2.bc -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+WARNING: [XFORM 203-631] Renaming function 'interval_normalization' to 'interval_normalizati' (FIRIn2Features/FIRIn2Features.cpp:15:47)
+Command         transform done; 0.82 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:29 . Memory (MB): peak = 414.773 ; gain = 323.750
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 5.903 sec.
+Command     elaborate done; 27.561 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'feature_extractor_ip' ...
+Execute       ap_set_top_model feature_extractor_ip 
+Execute       get_model_list feature_extractor_ip -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model feature_extractor_ip 
+Execute       preproc_iomode -model compute_features 
+Execute       preproc_iomode -model interval_normalizati 
+Execute       preproc_iomode -model peak_detection 
+Execute       get_model_list feature_extractor_ip -filter all-wo-channel 
+INFO-FLOW: Model list for configure: peak_detection interval_normalizati compute_features feature_extractor_ip
+INFO-FLOW: Configuring Module : peak_detection ...
+Execute       set_default_model peak_detection 
+Execute       apply_spec_resource_limit peak_detection 
+INFO-FLOW: Configuring Module : interval_normalizati ...
+Execute       set_default_model interval_normalizati 
+Execute       apply_spec_resource_limit interval_normalizati 
+INFO-FLOW: Configuring Module : compute_features ...
+Execute       set_default_model compute_features 
+Execute       apply_spec_resource_limit compute_features 
+INFO-FLOW: Configuring Module : feature_extractor_ip ...
+Execute       set_default_model feature_extractor_ip 
+Execute       apply_spec_resource_limit feature_extractor_ip 
+INFO-FLOW: Model list for preprocess: peak_detection interval_normalizati compute_features feature_extractor_ip
+INFO-FLOW: Preprocessing Module: peak_detection ...
+Execute       set_default_model peak_detection 
+Execute       cdfg_preprocess -model peak_detection 
+Execute       rtl_gen_preprocess peak_detection 
+INFO-FLOW: Preprocessing Module: interval_normalizati ...
+Execute       set_default_model interval_normalizati 
+Execute       cdfg_preprocess -model interval_normalizati 
+Execute       rtl_gen_preprocess interval_normalizati 
+INFO-FLOW: Preprocessing Module: compute_features ...
+Execute       set_default_model compute_features 
+Execute       cdfg_preprocess -model compute_features 
+Execute       rtl_gen_preprocess compute_features 
+INFO-FLOW: Preprocessing Module: feature_extractor_ip ...
+Execute       set_default_model feature_extractor_ip 
+Execute       cdfg_preprocess -model feature_extractor_ip 
+Execute       rtl_gen_preprocess feature_extractor_ip 
+INFO-FLOW: Model list for synthesis: peak_detection interval_normalizati compute_features feature_extractor_ip
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'peak_detection' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model peak_detection 
+Execute       schedule -model peak_detection 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 29.04 seconds; current allocated memory: 353.481 MB.
+Execute       syn_report -verbosereport -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/peak_detection.verbose.sched.rpt 
+INFO: [HLS 200-434] Only 0 loops out of a total 2 loops have been pipelined in this design.
+Execute       db_write -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/peak_detection.sched.adb -f 
+INFO-FLOW: Finish scheduling peak_detection.
+Execute       set_default_model peak_detection 
+Execute       bind -model peak_detection 
+BIND OPTION: model=peak_detection
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.147 seconds; current allocated memory: 353.758 MB.
+Execute       syn_report -verbosereport -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/peak_detection.verbose.bind.rpt 
+Execute       db_write -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/peak_detection.bind.adb -f 
+INFO-FLOW: Finish binding peak_detection.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'interval_normalizati' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model interval_normalizati 
+Execute       schedule -model interval_normalizati 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.145 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.265 seconds; current allocated memory: 354.181 MB.
+Execute       syn_report -verbosereport -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/interval_normalizati.verbose.sched.rpt 
+Execute       db_write -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/interval_normalizati.sched.adb -f 
+INFO-FLOW: Finish scheduling interval_normalizati.
+Execute       set_default_model interval_normalizati 
+Execute       bind -model interval_normalizati 
+BIND OPTION: model=interval_normalizati
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.147 seconds; current allocated memory: 354.572 MB.
+Execute       syn_report -verbosereport -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/interval_normalizati.verbose.bind.rpt 
+Execute       db_write -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/interval_normalizati.bind.adb -f 
+INFO-FLOW: Finish binding interval_normalizati.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'compute_features' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model compute_features 
+Execute       schedule -model compute_features 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.111 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.26 seconds; current allocated memory: 355.116 MB.
+Execute       syn_report -verbosereport -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/compute_features.verbose.sched.rpt 
+Execute       db_write -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/compute_features.sched.adb -f 
+INFO-FLOW: Finish scheduling compute_features.
+Execute       set_default_model compute_features 
+Execute       bind -model compute_features 
+BIND OPTION: model=compute_features
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.178 seconds; current allocated memory: 355.751 MB.
+Execute       syn_report -verbosereport -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/compute_features.verbose.bind.rpt 
+Execute       db_write -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/compute_features.bind.adb -f 
+INFO-FLOW: Finish binding compute_features.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'feature_extractor_ip' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model feature_extractor_ip 
+Execute       schedule -model feature_extractor_ip 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.215 seconds; current allocated memory: 355.872 MB.
+Execute       syn_report -verbosereport -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.verbose.sched.rpt 
+Execute       db_write -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.sched.adb -f 
+INFO-FLOW: Finish scheduling feature_extractor_ip.
+Execute       set_default_model feature_extractor_ip 
+Execute       bind -model feature_extractor_ip 
+BIND OPTION: model=feature_extractor_ip
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.158 seconds; current allocated memory: 356.011 MB.
+Execute       syn_report -verbosereport -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.verbose.bind.rpt 
+Command       syn_report done; 0.101 sec.
+Execute       db_write -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.bind.adb -f 
+INFO-FLOW: Finish binding feature_extractor_ip.
+Execute       get_model_list feature_extractor_ip -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess peak_detection 
+Execute       rtl_gen_preprocess interval_normalizati 
+Execute       rtl_gen_preprocess compute_features 
+Execute       rtl_gen_preprocess feature_extractor_ip 
+INFO-FLOW: Model list for RTL generation: peak_detection interval_normalizati compute_features feature_extractor_ip
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'peak_detection' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model peak_detection -vendor xilinx -mg_file E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/peak_detection.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'peak_detection_buf_buffer' to 'peak_detection_bubkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_fcmp_32ns_32ns_1_2_1' to 'feature_extractorcud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorcud': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'peak_detection'.
+INFO: [HLS 200-111]  Elapsed time: 0.223 seconds; current allocated memory: 356.671 MB.
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.rtl_wrap.cfg.tcl 
+Execute       gen_rtl peak_detection -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/syn/systemc/peak_detection -synmodules peak_detection interval_normalizati compute_features feature_extractor_ip 
+Execute       gen_rtl peak_detection -style xilinx -f -lang vhdl -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/syn/vhdl/peak_detection 
+Execute       gen_rtl peak_detection -style xilinx -f -lang vlog -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/syn/verilog/peak_detection 
+Execute       syn_report -csynth -model peak_detection -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/syn/report/peak_detection_csynth.rpt 
+Execute       syn_report -rtlxml -model peak_detection -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/syn/report/peak_detection_csynth.xml 
+Execute       syn_report -verbosereport -model peak_detection -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/peak_detection.verbose.rpt 
+Execute       db_write -model peak_detection -f -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/peak_detection.adb 
+Execute       gen_tb_info peak_detection -p E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/peak_detection 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'interval_normalizati' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model interval_normalizati -vendor xilinx -mg_file E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/interval_normalizati.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'interval_normalizati_buf_buffer' to 'interval_normalizdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_faddfsub_32ns_32ns_32_4_full_dsp_1' to 'feature_extractoreOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_fsub_32ns_32ns_32_4_full_dsp_1' to 'feature_extractorfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_fmul_32ns_32ns_32_3_max_dsp_1' to 'feature_extractorg8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_fdiv_32ns_32ns_32_12_1' to 'feature_extractorhbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_sitofp_32s_32_4_1' to 'feature_extractoribs' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'feature_extractoreOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorfYi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorg8j': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorhbi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractoribs': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'interval_normalizati'.
+INFO: [HLS 200-111]  Elapsed time: 0.285 seconds; current allocated memory: 357.730 MB.
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.rtl_wrap.cfg.tcl 
+Execute       gen_rtl interval_normalizati -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/syn/systemc/interval_normalizati -synmodules peak_detection interval_normalizati compute_features feature_extractor_ip 
+Execute       gen_rtl interval_normalizati -style xilinx -f -lang vhdl -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/syn/vhdl/interval_normalizati 
+Execute       gen_rtl interval_normalizati -style xilinx -f -lang vlog -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/syn/verilog/interval_normalizati 
+Execute       syn_report -csynth -model interval_normalizati -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/syn/report/interval_normalizati_csynth.rpt 
+Execute       syn_report -rtlxml -model interval_normalizati -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/syn/report/interval_normalizati_csynth.xml 
+Execute       syn_report -verbosereport -model interval_normalizati -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/interval_normalizati.verbose.rpt 
+Execute       db_write -model interval_normalizati -f -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/interval_normalizati.adb 
+Execute       gen_tb_info interval_normalizati -p E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/interval_normalizati 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'compute_features' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model compute_features -vendor xilinx -mg_file E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/compute_features.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'compute_features_buffer' to 'compute_features_jbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_features_diff1' to 'compute_features_kbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_sitofp_32ns_32_4_1' to 'feature_extractorlbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_fptrunc_64ns_32_2_1' to 'feature_extractormb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_fpext_32ns_64_2_1' to 'feature_extractorncg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_dadd_64ns_64ns_64_5_full_dsp_1' to 'feature_extractorocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_dmul_64ns_64ns_64_5_max_dsp_1' to 'feature_extractorpcA' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorcud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractoreOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorg8j': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorlbW': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractormb6': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorncg': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorocq': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorpcA': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'compute_features'.
+INFO: [HLS 200-111]  Elapsed time: 0.358 seconds; current allocated memory: 359.303 MB.
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.rtl_wrap.cfg.tcl 
+Execute       gen_rtl compute_features -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/syn/systemc/compute_features -synmodules peak_detection interval_normalizati compute_features feature_extractor_ip 
+Execute       gen_rtl compute_features -style xilinx -f -lang vhdl -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/syn/vhdl/compute_features 
+Execute       gen_rtl compute_features -style xilinx -f -lang vlog -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/syn/verilog/compute_features 
+Execute       syn_report -csynth -model compute_features -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/syn/report/compute_features_csynth.rpt 
+Execute       syn_report -rtlxml -model compute_features -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/syn/report/compute_features_csynth.xml 
+Execute       syn_report -verbosereport -model compute_features -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/compute_features.verbose.rpt 
+Command       syn_report done; 0.115 sec.
+Execute       db_write -model compute_features -f -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/compute_features.adb 
+Execute       gen_tb_info compute_features -p E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/compute_features 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'feature_extractor_ip' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model feature_extractor_ip -vendor xilinx -mg_file E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'feature_extractor_ip/fir_in_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'feature_extractor_ip/features_out_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'feature_extractor_ip' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'start_for_interval_normalizati_U0' to 'start_for_intervaqcK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_compute_features_U0' to 'start_for_computercU' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'feature_extractor_ip'.
+INFO: [HLS 200-111]  Elapsed time: 0.43 seconds; current allocated memory: 359.862 MB.
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.rtl_wrap.cfg.tcl 
+Execute       gen_rtl feature_extractor_ip -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/syn/systemc/feature_extractor_ip -synmodules peak_detection interval_normalizati compute_features feature_extractor_ip 
+Execute       gen_rtl feature_extractor_ip -istop -style xilinx -f -lang vhdl -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/syn/vhdl/feature_extractor_ip 
+Execute       gen_rtl feature_extractor_ip -istop -style xilinx -f -lang vlog -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/syn/verilog/feature_extractor_ip 
+Execute       syn_report -csynth -model feature_extractor_ip -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/syn/report/feature_extractor_ip_csynth.rpt 
+Execute       syn_report -rtlxml -model feature_extractor_ip -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/syn/report/feature_extractor_ip_csynth.xml 
+Execute       syn_report -verbosereport -model feature_extractor_ip -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.verbose.rpt 
+Command       syn_report done; 0.103 sec.
+Execute       db_write -model feature_extractor_ip -f -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.adb 
+Execute       gen_tb_info feature_extractor_ip -p E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip 
+Execute       export_constraint_db -f -tool general -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.constraint.tcl 
+Execute       syn_report -designview -model feature_extractor_ip -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.design.xml 
+Execute       get_config_rtl -disable_wave_debug 
+Execute       syn_report -wcfg -model feature_extractor_ip -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model feature_extractor_ip -o E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.protoinst 
+Execute       get_config_debug -directory 
+Execute       sc_get_clocks feature_extractor_ip 
+Execute       get_config_export -vivado_clock 
+Execute       sc_get_portdomain feature_extractor_ip 
+INFO-FLOW: Model list for RTL component generation: peak_detection interval_normalizati compute_features feature_extractor_ip
+INFO-FLOW: Handling components in module [peak_detection] ... 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/peak_detection.compgen.tcl 
+INFO-FLOW: Found component feature_extractorcud.
+INFO-FLOW: Append model feature_extractorcud
+INFO-FLOW: Found component peak_detection_bubkb.
+INFO-FLOW: Append model peak_detection_bubkb
+INFO-FLOW: Handling components in module [interval_normalizati] ... 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/interval_normalizati.compgen.tcl 
+INFO-FLOW: Found component feature_extractoreOg.
+INFO-FLOW: Append model feature_extractoreOg
+INFO-FLOW: Found component feature_extractorfYi.
+INFO-FLOW: Append model feature_extractorfYi
+INFO-FLOW: Found component feature_extractorg8j.
+INFO-FLOW: Append model feature_extractorg8j
+INFO-FLOW: Found component feature_extractorhbi.
+INFO-FLOW: Append model feature_extractorhbi
+INFO-FLOW: Found component feature_extractoribs.
+INFO-FLOW: Append model feature_extractoribs
+INFO-FLOW: Found component interval_normalizdEe.
+INFO-FLOW: Append model interval_normalizdEe
+INFO-FLOW: Handling components in module [compute_features] ... 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/compute_features.compgen.tcl 
+INFO-FLOW: Found component feature_extractorlbW.
+INFO-FLOW: Append model feature_extractorlbW
+INFO-FLOW: Found component feature_extractormb6.
+INFO-FLOW: Append model feature_extractormb6
+INFO-FLOW: Found component feature_extractorncg.
+INFO-FLOW: Append model feature_extractorncg
+INFO-FLOW: Found component feature_extractorocq.
+INFO-FLOW: Append model feature_extractorocq
+INFO-FLOW: Found component feature_extractorpcA.
+INFO-FLOW: Append model feature_extractorpcA
+INFO-FLOW: Found component compute_features_jbC.
+INFO-FLOW: Append model compute_features_jbC
+INFO-FLOW: Found component compute_features_kbM.
+INFO-FLOW: Append model compute_features_kbM
+INFO-FLOW: Handling components in module [feature_extractor_ip] ... 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.compgen.tcl 
+INFO-FLOW: Found component fifo_w10_d2_A.
+INFO-FLOW: Append model fifo_w10_d2_A
+INFO-FLOW: Found component fifo_w32_d2_A.
+INFO-FLOW: Append model fifo_w32_d2_A
+INFO-FLOW: Found component start_for_intervaqcK.
+INFO-FLOW: Append model start_for_intervaqcK
+INFO-FLOW: Found component start_for_computercU.
+INFO-FLOW: Append model start_for_computercU
+INFO-FLOW: Append model peak_detection
+INFO-FLOW: Append model interval_normalizati
+INFO-FLOW: Append model compute_features
+INFO-FLOW: Append model feature_extractor_ip
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: feature_extractorcud peak_detection_bubkb feature_extractoreOg feature_extractorfYi feature_extractorg8j feature_extractorhbi feature_extractoribs interval_normalizdEe feature_extractorlbW feature_extractormb6 feature_extractorncg feature_extractorocq feature_extractorpcA compute_features_jbC compute_features_kbM fifo_w10_d2_A fifo_w32_d2_A start_for_intervaqcK start_for_computercU peak_detection interval_normalizati compute_features feature_extractor_ip
+INFO-FLOW: To file: write model feature_extractorcud
+INFO-FLOW: To file: write model peak_detection_bubkb
+INFO-FLOW: To file: write model feature_extractoreOg
+INFO-FLOW: To file: write model feature_extractorfYi
+INFO-FLOW: To file: write model feature_extractorg8j
+INFO-FLOW: To file: write model feature_extractorhbi
+INFO-FLOW: To file: write model feature_extractoribs
+INFO-FLOW: To file: write model interval_normalizdEe
+INFO-FLOW: To file: write model feature_extractorlbW
+INFO-FLOW: To file: write model feature_extractormb6
+INFO-FLOW: To file: write model feature_extractorncg
+INFO-FLOW: To file: write model feature_extractorocq
+INFO-FLOW: To file: write model feature_extractorpcA
+INFO-FLOW: To file: write model compute_features_jbC
+INFO-FLOW: To file: write model compute_features_kbM
+INFO-FLOW: To file: write model fifo_w10_d2_A
+INFO-FLOW: To file: write model fifo_w32_d2_A
+INFO-FLOW: To file: write model start_for_intervaqcK
+INFO-FLOW: To file: write model start_for_computercU
+INFO-FLOW: To file: write model peak_detection
+INFO-FLOW: To file: write model interval_normalizati
+INFO-FLOW: To file: write model compute_features
+INFO-FLOW: To file: write model feature_extractor_ip
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d E:/SEU/Graduation_Prj/FIRIn2Features/solution1
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute             source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.138 sec.
+Command       ap_source done; 0.138 sec.
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/peak_detection.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+INFO: [RTMG 210-278] Implementing memory 'peak_detection_bubkb_ram (RAM)' using block RAMs.
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/interval_normalizati.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+WARNING: [RTMG 210-274] Memory 'interval_normalizdEe' is read-only, switch it to a ROM.
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'interval_normalizdEe_rom' using block ROMs.
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Command       ap_source done; 0.231 sec.
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/compute_features.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+INFO: [RTMG 210-278] Implementing memory 'compute_features_jbC_ram (RAM)' using block RAMs.
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+INFO: [RTMG 210-278] Implementing memory 'compute_features_kbM_ram (RAM)' using block RAMs.
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Command       ap_source done; 0.215 sec.
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'peak_loc_stream_V_V_U(fifo_w10_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'normalized_stream_V_U(fifo_w32_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_intervaqcK_U(start_for_intervaqcK)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_computercU_U(start_for_computercU)' using Shift Registers.
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d E:/SEU/Graduation_Prj/FIRIn2Features/solution1
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute             source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.109 sec.
+Command       ap_source done; 0.109 sec.
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=feature_extractor_ip xml_exists=0
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.rtl_wrap.cfg.tcl 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.rtl_wrap.cfg.tcl 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.rtl_wrap.cfg.tcl 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.tbgen.tcl 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/peak_detection.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/interval_normalizati.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Command       ap_source done; 0.126 sec.
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/compute_features.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Command       ap_source done; 0.136 sec.
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/peak_detection.compgen.tcl 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/interval_normalizati.compgen.tcl 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/compute_features.compgen.tcl 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/peak_detection.compgen.tcl 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/interval_normalizati.compgen.tcl 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/compute_features.compgen.tcl 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.compgen.tcl 
+Execute       ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.constraint.tcl 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=6
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=2
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=1 #modelList=23 #gSsdmPorts=6
+Execute       source F:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_export -xo 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.tbgen.tcl 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.tbgen.tcl 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.tbgen.tcl 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.rtl_wrap.cfg.tcl 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.compgen.dataonly.tcl 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.constraint.tcl 
+Execute       sc_get_clocks feature_extractor_ip 
+Execute       ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_debug -directory 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/impl/misc/feature_extractor_ip_ap_dadd_3_full_dsp_64_ip.tcl 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/impl/misc/feature_extractor_ip_ap_dmul_3_max_dsp_64_ip.tcl 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/impl/misc/feature_extractor_ip_ap_faddfsub_2_full_dsp_32_ip.tcl 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/impl/misc/feature_extractor_ip_ap_fcmp_0_no_dsp_32_ip.tcl 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/impl/misc/feature_extractor_ip_ap_fdiv_10_no_dsp_32_ip.tcl 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/impl/misc/feature_extractor_ip_ap_fmul_1_max_dsp_32_ip.tcl 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/impl/misc/feature_extractor_ip_ap_fpext_0_no_dsp_32_ip.tcl 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/impl/misc/feature_extractor_ip_ap_fptrunc_0_no_dsp_64_ip.tcl 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/impl/misc/feature_extractor_ip_ap_fsub_2_full_dsp_32_ip.tcl 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/impl/misc/feature_extractor_ip_ap_sitofp_2_no_dsp_32_ip.tcl 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/peak_detection.tbgen.tcl 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/interval_normalizati.tbgen.tcl 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/compute_features.tbgen.tcl 
+Execute       source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.tbgen.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -stall_sig_gen 
+Execute       get_config_rtl -profile 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist, skipping opencl info: E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:08 ; elapsed = 00:00:34 . Memory (MB): peak = 436.625 ; gain = 345.602
+INFO: [VHDL 208-304] Generating VHDL RTL for feature_extractor_ip.
+INFO: [VLOG 209-307] Generating Verilog RTL for feature_extractor_ip.
+Command     autosyn done; 5.037 sec.
+Command   csynth_design done; 32.604 sec.
+Command ap_source done; 33.603 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace E:/SEU/Graduation_Prj/FIRIn2Features/solution1 opened at Wed Mar 26 16:19:56 +0800 2025
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib F:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq 
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.125 sec.
+Command     ap_source done; 0.125 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib F:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020-clg400-2 
+Execute       ap_part_info -name xc7z020-clg400-2 -data single -quiet 
+Command       ap_part_info done; 0.627 sec.
+Execute       ap_part_info -name xc7z020-clg400-2 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-2 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         ap_part_info -data single -name xc7z020-clg400-2 
+Execute         ap_part_info -name xc7z020-clg400-2 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-2 -data info 
+Execute         config_chip_info -quiet -speed medium 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-2'
+Execute       ap_part_info -name xc7z020-clg400-2 -data info 
+Execute       get_default_platform 
+Command     set_part done; 0.723 sec.
+Execute     ap_part_info -data single -name xc7z020-clg400-2 
+Execute     ap_part_info -name xc7z020-clg400-2 -data resources 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info 
+Execute     config_chip_info -quiet -speed medium 
+Execute     config_export -description=features_extractor 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 0.896 sec.
+Execute   export_design -rtl verilog -format ip_catalog -description features_extractor 
+Execute     get_config_export -acc 
+Execute     get_config_export -clock_margin 
+Execute     get_config_export -custom_script 
+Execute     get_config_export -display_name 
+Execute     get_config_export -driver_input_dir 
+Execute     get_config_export -ipname 
+Execute     get_config_export -kernel_drc 
+Execute     get_config_export -library 
+Execute     get_config_export -qor_test 
+Execute     get_config_export -sdaccel 
+Execute     get_config_export -sim 
+Execute     get_config_export -taxonomy 
+Execute     get_config_export -use_ip 
+Execute     get_config_export -use_netlist 
+Execute     get_config_export -vendor 
+Execute     get_config_export -version 
+Execute     get_config_export -xo 
+Execute     config_export -description=features_extractor -format=ip_catalog -rtl=verilog 
+INFO-FLOW: DBG:CMD: export_design_wrap: -format ip_catalog -rtl verilog -description features_extractor
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -vivado_clock 
+Execute     get_top 
+Execute     get_config_sdx -target 
+Execute     get_config_rtl -module_auto_prefix 
+Execute     get_config_sdx -target 
+Execute     get_config_sdx -target 
+INFO-FLOW: DBG:CMD:   auto_impl: pack: -export -tool vivado -rtl verilog -sdx-target none
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl
+Execute     source F:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source F:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute     source F:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source F:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+Execute     source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.121 sec.
+Command     ap_source done; 0.121 sec.
+Execute     source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: automg_wrap -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:CMD:     auto_generate -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl
+Execute     source F:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source F:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute     source F:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source F:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+Execute     source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.118 sec.
+Command     ap_source done; 0.118 sec.
+Execute     source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=feature_extractor_ip xml_exists=1
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.rtl_wrap.cfg.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.rtl_wrap.cfg.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.rtl_wrap.cfg.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.tbgen.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/peak_detection.compgen.tcl 
+Execute       ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/interval_normalizati.compgen.tcl 
+Execute       ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Command     ap_source done; 0.12 sec.
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/compute_features.compgen.tcl 
+Execute       ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Command     ap_source done; 0.123 sec.
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/peak_detection.compgen.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/interval_normalizati.compgen.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/compute_features.compgen.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.compgen.tcl 
+Execute       ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/peak_detection.compgen.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/interval_normalizati.compgen.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/compute_features.compgen.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.compgen.tcl 
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.constraint.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=6
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=2
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=0 g_has_adaptors=false generate_bd_files=1 #modelList=23 #gSsdmPorts=6
+Execute     source F:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute       source F:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+Execute     source F:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source F:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute       source F:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -xo 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.tbgen.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.tbgen.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.tbgen.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.rtl_wrap.cfg.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.compgen.dataonly.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.constraint.tcl 
+Execute     sc_get_clocks feature_extractor_ip 
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_debug -directory 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/impl/misc/feature_extractor_ip_ap_dadd_3_full_dsp_64_ip.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/impl/misc/feature_extractor_ip_ap_dmul_3_max_dsp_64_ip.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/impl/misc/feature_extractor_ip_ap_faddfsub_2_full_dsp_32_ip.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/impl/misc/feature_extractor_ip_ap_fcmp_0_no_dsp_32_ip.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/impl/misc/feature_extractor_ip_ap_fdiv_10_no_dsp_32_ip.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/impl/misc/feature_extractor_ip_ap_fmul_1_max_dsp_32_ip.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/impl/misc/feature_extractor_ip_ap_fpext_0_no_dsp_32_ip.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/impl/misc/feature_extractor_ip_ap_fptrunc_0_no_dsp_64_ip.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/impl/misc/feature_extractor_ip_ap_fsub_2_full_dsp_32_ip.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/impl/misc/feature_extractor_ip_ap_sitofp_2_no_dsp_32_ip.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/peak_detection.tbgen.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/interval_normalizati.tbgen.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/compute_features.tbgen.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.tbgen.tcl 
+Execute     get_config_sdx -target 
+Execute     get_config_sdx -profile 
+Execute     get_config_rtl -kernel_profile 
+Execute     get_config_rtl -stall_sig_gen 
+Execute     get_config_rtl -profile 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist, skipping opencl info: E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD:       copying IP vlog from E:/SEU/Graduation_Prj/FIRIn2Features/solution1/impl/verilog
+INFO-FLOW: DBG:CMD:       copying IP vhdl from E:/SEU/Graduation_Prj/FIRIn2Features/solution1/impl/vhdl
+INFO-FLOW: DBG:CMD:       generate_ip_script #gSsdmPorts=6
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.tbgen.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.tbgen.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+Execute     get_config_debug -directory 
+INFO-FLOW: DBG:CMD:       generate_ip_auxiliary
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=feature_extractor_ip
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.rtl_wrap.cfg.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.rtl_wrap.cfg.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.rtl_wrap.cfg.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.tbgen.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.tbgen.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_top_info
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=feature_extractor_ip
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.rtl_wrap.cfg.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.rtl_wrap.cfg.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.rtl_wrap.cfg.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.tbgen.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.tbgen.tcl 
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_bd_script
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.tbgen.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.constraint.tcl 
+INFO-FLOW: DBG:CMD:       generate_ipi_example_script
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_syn_sh
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_imp_constraints
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.constraint.tcl 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/feature_extractor_ip.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+INFO-FLOW: DBG:CMD: read_platform_lib E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl
+Execute     source F:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source F:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute     source F:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source F:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute     source E:/SEU/Graduation_Prj/FIRIn2Features/solution1/.autopilot/db/global.setting.tcl 
+Execute     source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.12 sec.
+Command     ap_source done; 0.121 sec.
+Execute     source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source F:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     ap_part_info -name xc7z020-clg400-2 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-2 -data info -quiet 
+INFO-FLOW: DBG:CMD:     exec E:/SEU/Graduation_Prj/FIRIn2Features/solution1/impl/ip/pack.bat
+Command   export_design done; 43.747 sec.
+Command ap_source done; 44.645 sec.
+Execute cleanup_all 

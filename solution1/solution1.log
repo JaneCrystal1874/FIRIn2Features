@@ -1,0 +1,987 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-2'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'FIRIn2Features/FIRIn2Features.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from FIRIn2Features/FIRIn2Features.cpp:1:
+FIRIn2Features/FIRIn2Features.cpp:13:24: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    ap_uint<10> wr_ptr = 0;
+                       ^
+FIRIn2Features/FIRIn2Features.cpp:29:31: error: use of undeclared identifier 'peak_loc_stream'
+    hls::stream<ap_uint<10>>& peak_loc_stream
+                              ^
+FIRIn2Features/FIRIn2Features.cpp:161:2: error: type name requires a specifier or qualifier
+}
+ ^
+FIRIn2Features/FIRIn2Features.cpp:161:2: error: expected ')'
+FIRIn2Features/FIRIn2Features.cpp:27:20: note: to match this '('
+void peak_detection(
+                   ^
+FIRIn2Features/FIRIn2Features.cpp:161:2: error: expected function body after function declarator
+}
+ ^
+1 warning and 4 errors generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-2'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'FIRIn2Features/FIRIn2Features.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from FIRIn2Features/FIRIn2Features.cpp:1:
+FIRIn2Features/FIRIn2Features.cpp:13:24: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    ap_uint<10> wr_ptr = 0;
+                       ^
+FIRIn2Features/FIRIn2Features.cpp:28:31: error: use of undeclared identifier 'peak_loc_stream'
+    hls::stream<ap_uint<10>>& peak_loc_stream)
+                              ^
+FIRIn2Features/FIRIn2Features.cpp:161:2: error: type name requires a specifier or qualifier
+}
+ ^
+FIRIn2Features/FIRIn2Features.cpp:161:2: error: expected ')'
+FIRIn2Features/FIRIn2Features.cpp:27:20: note: to match this '('
+void peak_detection(hls::stream<float>& in,
+                   ^
+FIRIn2Features/FIRIn2Features.cpp:161:2: error: expected function body after function declarator
+}
+ ^
+1 warning and 4 errors generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-2'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'FIRIn2Features/FIRIn2Features.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from FIRIn2Features/FIRIn2Features.cpp:1:
+FIRIn2Features/FIRIn2Features.cpp:13:24: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    ap_uint<10> wr_ptr = 0;
+                       ^
+FIRIn2Features/FIRIn2Features.cpp:28:31: error: use of undeclared identifier 'peak_loc_stream'
+    hls::stream<ap_uint<10>>& peak_loc_stream)
+                              ^
+FIRIn2Features/FIRIn2Features.cpp:161:2: error: type name requires a specifier or qualifier
+}
+ ^
+FIRIn2Features/FIRIn2Features.cpp:161:2: error: expected ')'
+FIRIn2Features/FIRIn2Features.cpp:27:20: note: to match this '('
+void peak_detection(hls::stream<float>& in,
+                   ^
+FIRIn2Features/FIRIn2Features.cpp:161:2: error: expected function body after function declarator
+}
+ ^
+1 warning and 4 errors generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-2'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'FIRIn2Features/FIRIn2Features.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from FIRIn2Features/FIRIn2Features.cpp:1:
+FIRIn2Features/FIRIn2Features.cpp:13:24: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    ap_uint<10> wr_ptr = 0;
+                       ^
+FIRIn2Features/FIRIn2Features.cpp:59:31: error: use of undeclared identifier 'peaks'
+    hls::stream<ap_uint<10>>& peaks,
+                              ^
+FIRIn2Features/FIRIn2Features.cpp:60:23: error: type name requires a specifier or qualifier
+    hls::stream<float>& normalized_out
+                      ^
+FIRIn2Features/FIRIn2Features.cpp:59:31: error: use of undeclared identifier 'peaks'
+    hls::stream<ap_uint<10>>& peaks,
+                              ^
+FIRIn2Features/FIRIn2Features.cpp:60:23: error: type name requires a specifier or qualifier
+    hls::stream<float>& normalized_out
+                      ^
+FIRIn2Features/FIRIn2Features.cpp:160:2: error: expected ')'
+}
+ ^
+FIRIn2Features/FIRIn2Features.cpp:58:28: note: to match this '('
+void interval_normalization(
+                           ^
+FIRIn2Features/FIRIn2Features.cpp:160:2: error: expected function body after function declarator
+}
+ ^
+1 warning and 6 errors generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-2'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'FIRIn2Features/FIRIn2Features.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from FIRIn2Features/FIRIn2Features.cpp:1:
+FIRIn2Features/FIRIn2Features.cpp:13:24: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    ap_uint<10> wr_ptr = 0;
+                       ^
+FIRIn2Features/FIRIn2Features.cpp:68:52: error: conditional expression is ambiguous; 'typename ap_int_base<10, false>::RType<10, false>::minus' (aka 'ap_int<11>') can be converted to 'typename ap_int_base<33, true>::RType<10, false>::minus' (aka 'ap_int<34>') and vice versa
+        int interval_len = (curr_peak > last_peak) ?
+                                                   ^
+FIRIn2Features/FIRIn2Features.cpp:140:30: error: invalid operands to binary expression ('void' and 'float')
+    features_out << norm_aip << norm_slope << norm_tdia << norm_sip;
+    ~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~
+FIRIn2Features/FIRIn2Features.cpp:149:27: error: use of undeclared identifier 'peak_loc_stream'
+ hls::stream<ap_uint<10>> peak_loc_stream;
+                          ^
+FIRIn2Features/FIRIn2Features.cpp:149:42: error: type name requires a specifier or qualifier
+ hls::stream<ap_uint<10>> peak_loc_stream;
+                                         ^
+FIRIn2Features/FIRIn2Features.cpp:149:42: warning: declaration does not declare anything [-Wmissing-declarations]
+ hls::stream<ap_uint<10>> peak_loc_stream;
+                                         ^
+FIRIn2Features/FIRIn2Features.cpp:152:28: error: use of undeclared identifier 'peak_loc_stream'
+    peak_detection(fir_in, peak_loc_stream);
+                           ^
+FIRIn2Features/FIRIn2Features.cpp:153:28: error: use of undeclared identifier 'peak_loc_stream'
+    interval_normalization(peak_loc_stream, normalized_stream);
+                           ^
+2 warnings and 6 errors generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-2'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'FIRIn2Features/FIRIn2Features.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from FIRIn2Features/FIRIn2Features.cpp:1:
+FIRIn2Features/FIRIn2Features.cpp:13:24: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    ap_uint<10> wr_ptr = 0;
+                       ^
+FIRIn2Features/FIRIn2Features.cpp:68:52: error: conditional expression is ambiguous; 'typename ap_int_base<10, false>::RType<10, false>::minus' (aka 'ap_int<11>') can be converted to 'typename ap_int_base<33, true>::RType<10, false>::minus' (aka 'ap_int<34>') and vice versa
+        int interval_len = (curr_peak > last_peak) ?(curr_peak - last_peak) :(CIRCULAR_BUF_SIZE + curr_peak - last_peak);
+                                                   ^~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FIRIn2Features/FIRIn2Features.cpp:138:30: error: invalid operands to binary expression ('void' and 'float')
+    features_out << norm_aip << norm_slope << norm_tdia << norm_sip;
+    ~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~
+1 warning and 2 errors generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-2'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'FIRIn2Features/FIRIn2Features.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from FIRIn2Features/FIRIn2Features.cpp:1:
+FIRIn2Features/FIRIn2Features.cpp:13:24: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    ap_uint<10> wr_ptr = 0;
+                       ^
+FIRIn2Features/FIRIn2Features.cpp:146:30: error: invalid operands to binary expression ('void' and 'float')
+    features_out << norm_aip << norm_slope << norm_tdia << norm_sip;
+    ~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~
+1 warning and 1 error generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-2'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'FIRIn2Features/FIRIn2Features.cpp' ... 
+WARNING: [HLS 200-40] In file included from FIRIn2Features/FIRIn2Features.cpp:1:
+FIRIn2Features/FIRIn2Features.cpp:13:24: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    ap_uint<10> wr_ptr = 0;
+                       ^
+1 warning generated.
+WARNING: [HLS 214-111] Static variables and non-static stream cannot be used inside a dataflow region: FIRIn2Features/FIRIn2Features.cpp:158:28
+WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file FIRIn2Features/FIRIn2Features.cpp
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:20 . Memory (MB): peak = 185.031 ; gain = 93.363
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:20 . Memory (MB): peak = 185.031 ; gain = 93.363
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:23 . Memory (MB): peak = 223.367 ; gain = 131.699
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'CircularBuffer::write' into 'peak_detection' (FIRIn2Features/FIRIn2Features.cpp:35) automatically.
+INFO: [XFORM 203-602] Inlining function 'CircularBuffer::read' into 'peak_detection' (FIRIn2Features/FIRIn2Features.cpp:42) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' into 'generic_cast_IEEE754<int, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, float>' into '__hls_fptosi_float_i32' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:51) automatically.
+INFO: [XFORM 203-602] Inlining function 'CircularBuffer::read' into 'interval_normalization' (FIRIn2Features/FIRIn2Features.cpp:87) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_float_i32' into 'compute_features' (FIRIn2Features/FIRIn2Features.cpp:121) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:24 . Memory (MB): peak = 282.328 ; gain = 190.660
+INFO: [XFORM 203-602] Inlining function 'CircularBuffer::write' into 'peak_detection' (FIRIn2Features/FIRIn2Features.cpp:35) automatically.
+INFO: [XFORM 203-602] Inlining function 'CircularBuffer::read' into 'peak_detection' (FIRIn2Features/FIRIn2Features.cpp:42) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' into 'generic_cast_IEEE754<int, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, float>' into '__hls_fptosi_float_i32' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:51) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_float_i32' into 'interval_normalization' (FIRIn2Features/FIRIn2Features.cpp:84) automatically.
+INFO: [XFORM 203-602] Inlining function 'CircularBuffer::read' into 'interval_normalization' (FIRIn2Features/FIRIn2Features.cpp:87) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_float_i32' into 'compute_features' (FIRIn2Features/FIRIn2Features.cpp:121) automatically.
+INFO: [XFORM 203-712] Applying dataflow to function 'feature_extractor_ip', detected/extracted 3 process function(s): 
+	 'peak_detection'
+	 'interval_normalization'
+	 'compute_features'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (FIRIn2Features/FIRIn2Features.cpp:65:9) to (FIRIn2Features/FIRIn2Features.cpp:79:9) in function 'interval_normalization'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (FIRIn2Features/FIRIn2Features.cpp:121:9) to (FIRIn2Features/FIRIn2Features.cpp:120:45) in function 'compute_features'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (FIRIn2Features/FIRIn2Features.cpp:127:9) to (FIRIn2Features/FIRIn2Features.cpp:126:29) in function 'compute_features'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:25 . Memory (MB): peak = 366.098 ; gain = 274.430
+WARNING: [XFORM 203-631] Renaming function 'interval_normalization' to 'interval_normalizati' (FIRIn2Features/FIRIn2Features.cpp:15:47)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:26 . Memory (MB): peak = 414.121 ; gain = 322.453
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'feature_extractor_ip' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'peak_detection' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 26.178 seconds; current allocated memory: 353.243 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 2 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 353.515 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'interval_normalizati' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.276 seconds; current allocated memory: 353.938 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.146 seconds; current allocated memory: 354.322 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'compute_features' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.409 seconds; current allocated memory: 354.858 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.191 seconds; current allocated memory: 355.461 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'feature_extractor_ip' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.234 seconds; current allocated memory: 355.566 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.223 seconds; current allocated memory: 355.763 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'peak_detection' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'peak_detection_buf_buffer' to 'peak_detection_bubkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_fcmp_32ns_32ns_1_2_1' to 'feature_extractorcud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorcud': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'peak_detection'.
+INFO: [HLS 200-111]  Elapsed time: 0.252 seconds; current allocated memory: 356.423 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'interval_normalizati' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'interval_normalizati_buf_buffer' to 'interval_normalizdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_faddfsub_32ns_32ns_32_4_full_dsp_1' to 'feature_extractoreOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_fsub_32ns_32ns_32_4_full_dsp_1' to 'feature_extractorfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_fmul_32ns_32ns_32_3_max_dsp_1' to 'feature_extractorg8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_fdiv_32ns_32ns_32_12_1' to 'feature_extractorhbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_sitofp_32s_32_4_1' to 'feature_extractoribs' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'feature_extractoreOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorfYi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorg8j': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorhbi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractoribs': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'interval_normalizati'.
+INFO: [HLS 200-111]  Elapsed time: 0.29 seconds; current allocated memory: 357.497 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'compute_features' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'compute_features_buffer' to 'compute_features_jbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_features_diff1' to 'compute_features_kbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_sitofp_32ns_32_4_1' to 'feature_extractorlbW' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorcud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractoreOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorg8j': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorhbi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorlbW': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'compute_features'.
+INFO: [HLS 200-111]  Elapsed time: 0.383 seconds; current allocated memory: 358.882 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'feature_extractor_ip' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'feature_extractor_ip/fir_in_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'feature_extractor_ip/features_out_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'feature_extractor_ip' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'start_for_interval_normalizati_U0' to 'start_for_intervamb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_compute_features_U0' to 'start_for_computencg' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'feature_extractor_ip'.
+INFO: [HLS 200-111]  Elapsed time: 0.485 seconds; current allocated memory: 359.416 MB.
+INFO: [RTMG 210-278] Implementing memory 'peak_detection_bubkb_ram (RAM)' using block RAMs.
+WARNING: [RTMG 210-274] Memory 'interval_normalizdEe' is read-only, switch it to a ROM.
+INFO: [RTMG 210-279] Implementing memory 'interval_normalizdEe_rom' using block ROMs.
+INFO: [RTMG 210-278] Implementing memory 'compute_features_jbC_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'compute_features_kbM_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'peak_loc_stream_V_V_U(fifo_w10_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'normalized_stream_V_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_intervamb6_U(start_for_intervamb6)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_computencg_U(start_for_computencg)' using Shift Registers.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:09 ; elapsed = 00:00:31 . Memory (MB): peak = 435.828 ; gain = 344.160
+INFO: [VHDL 208-304] Generating VHDL RTL for feature_extractor_ip.
+INFO: [VLOG 209-307] Generating Verilog RTL for feature_extractor_ip.
+INFO: [HLS 200-112] Total elapsed time: 31.232 seconds; peak allocated memory: 359.416 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-2'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-2'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-2'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-2'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-2'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-2'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-2'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-2'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-2'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-2'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-2'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'FIRIn2Features/FIRIn2Features.cpp' ... 
+WARNING: [HLS 200-40] In file included from FIRIn2Features/FIRIn2Features.cpp:1:
+FIRIn2Features/FIRIn2Features.cpp:12:24: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    ap_uint<10> wr_ptr = 0;
+                       ^
+1 warning generated.
+WARNING: [HLS 214-111] Static variables and non-static stream cannot be used inside a dataflow region: FIRIn2Features/FIRIn2Features.cpp:156:28
+WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file FIRIn2Features/FIRIn2Features.cpp
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 185.148 ; gain = 93.551
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 185.148 ; gain = 93.551
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:22 . Memory (MB): peak = 222.602 ; gain = 131.004
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'CircularBuffer::write' into 'peak_detection' (FIRIn2Features/FIRIn2Features.cpp:34) automatically.
+INFO: [XFORM 203-602] Inlining function 'CircularBuffer::read' into 'peak_detection' (FIRIn2Features/FIRIn2Features.cpp:41) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' into 'generic_cast_IEEE754<int, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, float>' into '__hls_fptosi_float_i32' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:51) automatically.
+INFO: [XFORM 203-602] Inlining function 'CircularBuffer::read' into 'interval_normalization' (FIRIn2Features/FIRIn2Features.cpp:90) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_float_i32' into 'compute_features' (FIRIn2Features/FIRIn2Features.cpp:124) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:23 . Memory (MB): peak = 282.730 ; gain = 191.133
+INFO: [XFORM 203-602] Inlining function 'CircularBuffer::write' into 'peak_detection' (FIRIn2Features/FIRIn2Features.cpp:34) automatically.
+INFO: [XFORM 203-602] Inlining function 'CircularBuffer::read' into 'peak_detection' (FIRIn2Features/FIRIn2Features.cpp:41) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' into 'generic_cast_IEEE754<int, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, float>' into '__hls_fptosi_float_i32' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:51) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_float_i32' into 'interval_normalization' (FIRIn2Features/FIRIn2Features.cpp:87) automatically.
+INFO: [XFORM 203-602] Inlining function 'CircularBuffer::read' into 'interval_normalization' (FIRIn2Features/FIRIn2Features.cpp:90) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_float_i32' into 'compute_features' (FIRIn2Features/FIRIn2Features.cpp:124) automatically.
+INFO: [XFORM 203-712] Applying dataflow to function 'feature_extractor_ip', detected/extracted 3 process function(s): 
+	 'peak_detection'
+	 'interval_normalization'
+	 'compute_features'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (FIRIn2Features/FIRIn2Features.cpp:65:9) to (FIRIn2Features/FIRIn2Features.cpp:79:9) in function 'interval_normalization'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (FIRIn2Features/FIRIn2Features.cpp:124:9) to (FIRIn2Features/FIRIn2Features.cpp:123:45) in function 'compute_features'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (FIRIn2Features/FIRIn2Features.cpp:130:9) to (FIRIn2Features/FIRIn2Features.cpp:129:29) in function 'compute_features'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:24 . Memory (MB): peak = 365.355 ; gain = 273.758
+WARNING: [XFORM 203-631] Renaming function 'interval_normalization' to 'interval_normalizati' (FIRIn2Features/FIRIn2Features.cpp:15:47)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:25 . Memory (MB): peak = 413.391 ; gain = 321.793
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'feature_extractor_ip' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'peak_detection' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 24.989 seconds; current allocated memory: 353.238 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 2 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 353.494 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'interval_normalizati' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.268 seconds; current allocated memory: 353.933 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.143 seconds; current allocated memory: 354.317 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'compute_features' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.337 seconds; current allocated memory: 354.800 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.168 seconds; current allocated memory: 355.330 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'feature_extractor_ip' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.179 seconds; current allocated memory: 355.434 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.183 seconds; current allocated memory: 355.631 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'peak_detection' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'peak_detection_buf_buffer' to 'peak_detection_bubkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_fcmp_32ns_32ns_1_2_1' to 'feature_extractorcud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorcud': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'peak_detection'.
+INFO: [HLS 200-111]  Elapsed time: 0.2 seconds; current allocated memory: 356.275 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'interval_normalizati' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'interval_normalizati_buf_buffer' to 'interval_normalizdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_faddfsub_32ns_32ns_32_4_full_dsp_1' to 'feature_extractoreOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_fsub_32ns_32ns_32_4_full_dsp_1' to 'feature_extractorfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_fmul_32ns_32ns_32_3_max_dsp_1' to 'feature_extractorg8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_fdiv_32ns_32ns_32_12_1' to 'feature_extractorhbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_sitofp_32s_32_4_1' to 'feature_extractoribs' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'feature_extractoreOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorfYi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorg8j': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorhbi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractoribs': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'interval_normalizati'.
+INFO: [HLS 200-111]  Elapsed time: 0.273 seconds; current allocated memory: 357.334 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'compute_features' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'compute_features_buffer' to 'compute_features_jbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_features_diff1' to 'compute_features_kbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_sitofp_32ns_32_4_1' to 'feature_extractorlbW' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorcud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractoreOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorg8j': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorlbW': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'compute_features'.
+INFO: [HLS 200-111]  Elapsed time: 0.332 seconds; current allocated memory: 358.620 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'feature_extractor_ip' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'feature_extractor_ip/fir_in_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'feature_extractor_ip/features_out_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'feature_extractor_ip' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'start_for_interval_normalizati_U0' to 'start_for_intervamb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_compute_features_U0' to 'start_for_computencg' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'feature_extractor_ip'.
+INFO: [HLS 200-111]  Elapsed time: 0.382 seconds; current allocated memory: 359.128 MB.
+INFO: [RTMG 210-278] Implementing memory 'peak_detection_bubkb_ram (RAM)' using block RAMs.
+WARNING: [RTMG 210-274] Memory 'interval_normalizdEe' is read-only, switch it to a ROM.
+INFO: [RTMG 210-279] Implementing memory 'interval_normalizdEe_rom' using block ROMs.
+INFO: [RTMG 210-278] Implementing memory 'compute_features_jbC_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'compute_features_kbM_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'peak_loc_stream_V_V_U(fifo_w10_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'normalized_stream_V_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_intervamb6_U(start_for_intervamb6)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_computencg_U(start_for_computencg)' using Shift Registers.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:08 ; elapsed = 00:00:29 . Memory (MB): peak = 433.988 ; gain = 342.391
+INFO: [VHDL 208-304] Generating VHDL RTL for feature_extractor_ip.
+INFO: [VLOG 209-307] Generating Verilog RTL for feature_extractor_ip.
+INFO: [HLS 200-112] Total elapsed time: 29.439 seconds; peak allocated memory: 359.128 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-2'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'FIRIn2Features/FIRIn2Features.cpp' ... 
+WARNING: [HLS 200-40] In file included from FIRIn2Features/FIRIn2Features.cpp:1:
+FIRIn2Features/FIRIn2Features.cpp:12:24: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    ap_uint<10> wr_ptr = 0;
+                       ^
+1 warning generated.
+WARNING: [HLS 214-111] Static variables and non-static stream cannot be used inside a dataflow region: FIRIn2Features/FIRIn2Features.cpp:158:28
+WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file FIRIn2Features/FIRIn2Features.cpp
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:20 . Memory (MB): peak = 185.039 ; gain = 93.426
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:20 . Memory (MB): peak = 185.039 ; gain = 93.426
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:22 . Memory (MB): peak = 223.539 ; gain = 131.926
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'CircularBuffer::write' into 'peak_detection' (FIRIn2Features/FIRIn2Features.cpp:34) automatically.
+INFO: [XFORM 203-602] Inlining function 'CircularBuffer::read' into 'peak_detection' (FIRIn2Features/FIRIn2Features.cpp:41) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' into 'generic_cast_IEEE754<int, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, float>' into '__hls_fptosi_float_i32' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:51) automatically.
+INFO: [XFORM 203-602] Inlining function 'CircularBuffer::read' into 'interval_normalization' (FIRIn2Features/FIRIn2Features.cpp:90) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_float_i32' into 'compute_features' (FIRIn2Features/FIRIn2Features.cpp:124) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:23 . Memory (MB): peak = 282.492 ; gain = 190.879
+INFO: [XFORM 203-602] Inlining function 'CircularBuffer::write' into 'peak_detection' (FIRIn2Features/FIRIn2Features.cpp:34) automatically.
+INFO: [XFORM 203-602] Inlining function 'CircularBuffer::read' into 'peak_detection' (FIRIn2Features/FIRIn2Features.cpp:41) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' into 'generic_cast_IEEE754<int, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, float>' into '__hls_fptosi_float_i32' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:51) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_float_i32' into 'interval_normalization' (FIRIn2Features/FIRIn2Features.cpp:87) automatically.
+INFO: [XFORM 203-602] Inlining function 'CircularBuffer::read' into 'interval_normalization' (FIRIn2Features/FIRIn2Features.cpp:90) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_float_i32' into 'compute_features' (FIRIn2Features/FIRIn2Features.cpp:124) automatically.
+INFO: [XFORM 203-712] Applying dataflow to function 'feature_extractor_ip', detected/extracted 3 process function(s): 
+	 'peak_detection'
+	 'interval_normalization'
+	 'compute_features'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (FIRIn2Features/FIRIn2Features.cpp:65:9) to (FIRIn2Features/FIRIn2Features.cpp:79:9) in function 'interval_normalization'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (FIRIn2Features/FIRIn2Features.cpp:124:9) to (FIRIn2Features/FIRIn2Features.cpp:123:45) in function 'compute_features'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (FIRIn2Features/FIRIn2Features.cpp:130:9) to (FIRIn2Features/FIRIn2Features.cpp:129:29) in function 'compute_features'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:25 . Memory (MB): peak = 364.297 ; gain = 272.684
+WARNING: [XFORM 203-631] Renaming function 'interval_normalization' to 'interval_normalizati' (FIRIn2Features/FIRIn2Features.cpp:15:47)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:25 . Memory (MB): peak = 413.887 ; gain = 322.273
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'feature_extractor_ip' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'peak_detection' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 25.621 seconds; current allocated memory: 353.376 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 2 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.121 seconds; current allocated memory: 353.653 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'interval_normalizati' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.267 seconds; current allocated memory: 354.091 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.134 seconds; current allocated memory: 354.482 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'compute_features' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.241 seconds; current allocated memory: 354.969 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.158 seconds; current allocated memory: 355.509 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'feature_extractor_ip' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.187 seconds; current allocated memory: 355.615 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.186 seconds; current allocated memory: 355.822 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'peak_detection' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'peak_detection_buf_buffer' to 'peak_detection_bubkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_fcmp_32ns_32ns_1_2_1' to 'feature_extractorcud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorcud': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'peak_detection'.
+INFO: [HLS 200-111]  Elapsed time: 0.214 seconds; current allocated memory: 356.445 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'interval_normalizati' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'interval_normalizati_buf_buffer' to 'interval_normalizdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_faddfsub_32ns_32ns_32_4_full_dsp_1' to 'feature_extractoreOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_fsub_32ns_32ns_32_4_full_dsp_1' to 'feature_extractorfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_fmul_32ns_32ns_32_3_max_dsp_1' to 'feature_extractorg8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_fdiv_32ns_32ns_32_12_1' to 'feature_extractorhbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_sitofp_32s_32_4_1' to 'feature_extractoribs' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'feature_extractoreOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorfYi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorg8j': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorhbi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractoribs': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'interval_normalizati'.
+INFO: [HLS 200-111]  Elapsed time: 0.278 seconds; current allocated memory: 357.540 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'compute_features' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'compute_features_buffer' to 'compute_features_jbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_features_diff1' to 'compute_features_kbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_sitofp_32ns_32_4_1' to 'feature_extractorlbW' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorcud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractoreOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorg8j': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorlbW': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'compute_features'.
+INFO: [HLS 200-111]  Elapsed time: 0.328 seconds; current allocated memory: 358.845 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'feature_extractor_ip' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'feature_extractor_ip/fir_in_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'feature_extractor_ip/features_out_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'feature_extractor_ip' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'start_for_interval_normalizati_U0' to 'start_for_intervamb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_compute_features_U0' to 'start_for_computencg' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'feature_extractor_ip'.
+INFO: [HLS 200-111]  Elapsed time: 0.404 seconds; current allocated memory: 359.388 MB.
+INFO: [RTMG 210-278] Implementing memory 'peak_detection_bubkb_ram (RAM)' using block RAMs.
+WARNING: [RTMG 210-274] Memory 'interval_normalizdEe' is read-only, switch it to a ROM.
+INFO: [RTMG 210-279] Implementing memory 'interval_normalizdEe_rom' using block ROMs.
+INFO: [RTMG 210-278] Implementing memory 'compute_features_jbC_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'compute_features_kbM_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'peak_loc_stream_V_V_U(fifo_w10_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'normalized_stream_V_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_intervamb6_U(start_for_intervamb6)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_computencg_U(start_for_computencg)' using Shift Registers.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:08 ; elapsed = 00:00:30 . Memory (MB): peak = 435.332 ; gain = 343.719
+INFO: [VHDL 208-304] Generating VHDL RTL for feature_extractor_ip.
+INFO: [VLOG 209-307] Generating Verilog RTL for feature_extractor_ip.
+INFO: [HLS 200-112] Total elapsed time: 30.117 seconds; peak allocated memory: 359.388 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-2'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-2'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-2'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-2'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-2'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-2'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'FIRIn2Features/FIRIn2Features.cpp' ... 
+WARNING: [HLS 200-40] In file included from FIRIn2Features/FIRIn2Features.cpp:1:
+FIRIn2Features/FIRIn2Features.cpp:12:24: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+    ap_uint<10> wr_ptr = 0;
+                       ^
+1 warning generated.
+WARNING: [HLS 214-111] Static variables and non-static stream cannot be used inside a dataflow region: FIRIn2Features/FIRIn2Features.cpp:164:28
+WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file FIRIn2Features/FIRIn2Features.cpp
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:23 . Memory (MB): peak = 185.062 ; gain = 94.039
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:23 . Memory (MB): peak = 185.062 ; gain = 94.039
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:26 . Memory (MB): peak = 223.059 ; gain = 132.035
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'CircularBuffer::write' into 'peak_detection' (FIRIn2Features/FIRIn2Features.cpp:34) automatically.
+INFO: [XFORM 203-602] Inlining function 'CircularBuffer::read' into 'peak_detection' (FIRIn2Features/FIRIn2Features.cpp:41) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' into 'generic_cast_IEEE754<int, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, float>' into '__hls_fptosi_float_i32' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:51) automatically.
+INFO: [XFORM 203-602] Inlining function 'CircularBuffer::read' into 'interval_normalization' (FIRIn2Features/FIRIn2Features.cpp:90) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_float_i32' into 'compute_features' (FIRIn2Features/FIRIn2Features.cpp:124) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:27 . Memory (MB): peak = 282.406 ; gain = 191.383
+INFO: [XFORM 203-602] Inlining function 'CircularBuffer::write' into 'peak_detection' (FIRIn2Features/FIRIn2Features.cpp:34) automatically.
+INFO: [XFORM 203-602] Inlining function 'CircularBuffer::read' into 'peak_detection' (FIRIn2Features/FIRIn2Features.cpp:41) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' into 'generic_cast_IEEE754<int, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, float>' into '__hls_fptosi_float_i32' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:51) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_float_i32' into 'interval_normalization' (FIRIn2Features/FIRIn2Features.cpp:87) automatically.
+INFO: [XFORM 203-602] Inlining function 'CircularBuffer::read' into 'interval_normalization' (FIRIn2Features/FIRIn2Features.cpp:90) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_float_i32' into 'compute_features' (FIRIn2Features/FIRIn2Features.cpp:124) automatically.
+INFO: [XFORM 203-712] Applying dataflow to function 'feature_extractor_ip', detected/extracted 3 process function(s): 
+	 'peak_detection'
+	 'interval_normalization'
+	 'compute_features'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (FIRIn2Features/FIRIn2Features.cpp:65:9) to (FIRIn2Features/FIRIn2Features.cpp:79:9) in function 'interval_normalization'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (FIRIn2Features/FIRIn2Features.cpp:124:9) to (FIRIn2Features/FIRIn2Features.cpp:123:45) in function 'compute_features'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (FIRIn2Features/FIRIn2Features.cpp:130:9) to (FIRIn2Features/FIRIn2Features.cpp:129:29) in function 'compute_features'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:28 . Memory (MB): peak = 365.660 ; gain = 274.637
+WARNING: [XFORM 203-631] Renaming function 'interval_normalization' to 'interval_normalizati' (FIRIn2Features/FIRIn2Features.cpp:15:47)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:29 . Memory (MB): peak = 414.773 ; gain = 323.750
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'feature_extractor_ip' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'peak_detection' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 29.04 seconds; current allocated memory: 353.481 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 2 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.147 seconds; current allocated memory: 353.758 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'interval_normalizati' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.265 seconds; current allocated memory: 354.181 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.147 seconds; current allocated memory: 354.572 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'compute_features' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.26 seconds; current allocated memory: 355.116 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.178 seconds; current allocated memory: 355.751 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'feature_extractor_ip' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.215 seconds; current allocated memory: 355.872 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.158 seconds; current allocated memory: 356.011 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'peak_detection' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'peak_detection_buf_buffer' to 'peak_detection_bubkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_fcmp_32ns_32ns_1_2_1' to 'feature_extractorcud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorcud': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'peak_detection'.
+INFO: [HLS 200-111]  Elapsed time: 0.223 seconds; current allocated memory: 356.671 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'interval_normalizati' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'interval_normalizati_buf_buffer' to 'interval_normalizdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_faddfsub_32ns_32ns_32_4_full_dsp_1' to 'feature_extractoreOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_fsub_32ns_32ns_32_4_full_dsp_1' to 'feature_extractorfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_fmul_32ns_32ns_32_3_max_dsp_1' to 'feature_extractorg8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_fdiv_32ns_32ns_32_12_1' to 'feature_extractorhbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_sitofp_32s_32_4_1' to 'feature_extractoribs' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'feature_extractoreOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorfYi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorg8j': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorhbi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractoribs': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'interval_normalizati'.
+INFO: [HLS 200-111]  Elapsed time: 0.285 seconds; current allocated memory: 357.730 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'compute_features' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'compute_features_buffer' to 'compute_features_jbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_features_diff1' to 'compute_features_kbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_sitofp_32ns_32_4_1' to 'feature_extractorlbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_fptrunc_64ns_32_2_1' to 'feature_extractormb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_fpext_32ns_64_2_1' to 'feature_extractorncg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_dadd_64ns_64ns_64_5_full_dsp_1' to 'feature_extractorocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'feature_extractor_ip_dmul_64ns_64ns_64_5_max_dsp_1' to 'feature_extractorpcA' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorcud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractoreOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorg8j': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorlbW': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractormb6': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorncg': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorocq': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'feature_extractorpcA': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'compute_features'.
+INFO: [HLS 200-111]  Elapsed time: 0.358 seconds; current allocated memory: 359.303 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'feature_extractor_ip' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'feature_extractor_ip/fir_in_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'feature_extractor_ip/features_out_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'feature_extractor_ip' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'start_for_interval_normalizati_U0' to 'start_for_intervaqcK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_compute_features_U0' to 'start_for_computercU' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'feature_extractor_ip'.
+INFO: [HLS 200-111]  Elapsed time: 0.43 seconds; current allocated memory: 359.862 MB.
+INFO: [RTMG 210-278] Implementing memory 'peak_detection_bubkb_ram (RAM)' using block RAMs.
+WARNING: [RTMG 210-274] Memory 'interval_normalizdEe' is read-only, switch it to a ROM.
+INFO: [RTMG 210-279] Implementing memory 'interval_normalizdEe_rom' using block ROMs.
+INFO: [RTMG 210-278] Implementing memory 'compute_features_jbC_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'compute_features_kbM_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'peak_loc_stream_V_V_U(fifo_w10_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'normalized_stream_V_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_intervaqcK_U(start_for_intervaqcK)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_computercU_U(start_for_computercU)' using Shift Registers.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:08 ; elapsed = 00:00:34 . Memory (MB): peak = 436.625 ; gain = 345.602
+INFO: [VHDL 208-304] Generating VHDL RTL for feature_extractor_ip.
+INFO: [VLOG 209-307] Generating Verilog RTL for feature_extractor_ip.
+INFO: [HLS 200-112] Total elapsed time: 34 seconds; peak allocated memory: 359.862 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-2'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.

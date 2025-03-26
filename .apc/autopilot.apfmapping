@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="FIRIn2Features.h" path="E:\SEU\Graduation_Prj\FIRIn2Features\FIRIn2Features.h"/>
+    <originFiles name="FIRIn2Features.cpp" path="E:\SEU\Graduation_Prj\FIRIn2Features\FIRIn2Features.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="input_waveform.dat" path="E:\SEU\Graduation_Prj\FIRIn2Features\input_waveform.dat"/>
+    <originFiles name="FIRIn2Features_testbench.cpp" path="E:\SEU\Graduation_Prj\FIRIn2Features\FIRIn2Features_testbench.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,17 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../FIRIn2Features.cpp in debug mode
+   Generating csim.exe
+正在写入2048个采样点...
+开始执行特征提取...
+WARNING: Hls::stream 'hls::stream<float>.3' contains leftover data, which may result in RTL simulation hanging.
+特征集合 #0:
+  AIP(拐点幅值): 0.944461
+  Slope(斜率):   0.687983
+  TDIA(峰位置):  0.71
+  SIP(面积积分): 0.859922
+------------------------
+
+测试完成！结果已保存至: output_features.txt
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

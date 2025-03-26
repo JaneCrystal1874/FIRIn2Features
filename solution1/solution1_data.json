@@ -1,0 +1,520 @@
+{
+  "Top": "feature_extractor_ip",
+  "RtlTop": "feature_extractor_ip",
+  "RtlPrefix": "",
+  "SourceLanguage": "cpp",
+  "ResetStyle": "control",
+  "GenerateBdFiles": "1",
+  "HostMachineBits": "64",
+  "Target": {
+    "Family": "zynq",
+    "Device": "xc7z020",
+    "Package": "-clg400",
+    "Speed": "-2"
+  },
+  "HlsSolution": {"Config": [
+      "config_export -description=features_extractor",
+      "config_export -format=ip_catalog",
+      "config_export -rtl=verilog"
+    ]},
+  "Args": {
+    "fir_in": {
+      "index": "0",
+      "type": {
+        "dataType": "float",
+        "dataWidth": "32",
+        "interfaceRef": "fir_in_V",
+        "portRef": "TDATA"
+      }
+    },
+    "features_out": {
+      "index": "1",
+      "type": {
+        "dataType": "float",
+        "dataWidth": "32",
+        "interfaceRef": "features_out_V",
+        "portRef": "TDATA"
+      }
+    }
+  },
+  "Return": {
+    
+  },
+  "ClockInfo": {
+    "ClockName": "ap_clk",
+    "ClockPeriod": "10",
+    "IsCombLogic": "0",
+    "II": "x",
+    "Latency": "undef",
+    "Uncertainty": "1.25"
+  },
+  "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
+  "Ipx": {
+    "Vendor": "xilinx.com",
+    "Library": "hls",
+    "Name": "feature_extractor_ip",
+    "Version": "1.0",
+    "DisplayName": "Feature_extractor_ip",
+    "Revision": "",
+    "Description": "features_extractor",
+    "Taxonomy": "\/VIVADO_HLS_IP",
+    "AutoFamilySupport": ""
+  },
+  "Files": {
+    "CSource": ["..\/FIRIn2Features.cpp"],
+    "Vhdl": [
+      "impl\/vhdl\/compute_features.vhd",
+      "impl\/vhdl\/compute_features_jbC.vhd",
+      "impl\/vhdl\/compute_features_kbM.vhd",
+      "impl\/vhdl\/feature_extractorcud.vhd",
+      "impl\/vhdl\/feature_extractoreOg.vhd",
+      "impl\/vhdl\/feature_extractorfYi.vhd",
+      "impl\/vhdl\/feature_extractorg8j.vhd",
+      "impl\/vhdl\/feature_extractorhbi.vhd",
+      "impl\/vhdl\/feature_extractoribs.vhd",
+      "impl\/vhdl\/feature_extractorlbW.vhd",
+      "impl\/vhdl\/feature_extractormb6.vhd",
+      "impl\/vhdl\/feature_extractorncg.vhd",
+      "impl\/vhdl\/feature_extractorocq.vhd",
+      "impl\/vhdl\/feature_extractorpcA.vhd",
+      "impl\/vhdl\/fifo_w10_d2_A.vhd",
+      "impl\/vhdl\/fifo_w32_d2_A.vhd",
+      "impl\/vhdl\/interval_normalizati.vhd",
+      "impl\/vhdl\/interval_normalizdEe.vhd",
+      "impl\/vhdl\/peak_detection.vhd",
+      "impl\/vhdl\/peak_detection_bubkb.vhd",
+      "impl\/vhdl\/start_for_computercU.vhd",
+      "impl\/vhdl\/start_for_intervaqcK.vhd",
+      "impl\/vhdl\/feature_extractor_ip.vhd"
+    ],
+    "Verilog": [
+      "impl\/verilog\/compute_features.v",
+      "impl\/verilog\/compute_features_jbC.v",
+      "impl\/verilog\/compute_features_kbM.v",
+      "impl\/verilog\/feature_extractorcud.v",
+      "impl\/verilog\/feature_extractoreOg.v",
+      "impl\/verilog\/feature_extractorfYi.v",
+      "impl\/verilog\/feature_extractorg8j.v",
+      "impl\/verilog\/feature_extractorhbi.v",
+      "impl\/verilog\/feature_extractoribs.v",
+      "impl\/verilog\/feature_extractorlbW.v",
+      "impl\/verilog\/feature_extractormb6.v",
+      "impl\/verilog\/feature_extractorncg.v",
+      "impl\/verilog\/feature_extractorocq.v",
+      "impl\/verilog\/feature_extractorpcA.v",
+      "impl\/verilog\/fifo_w10_d2_A.v",
+      "impl\/verilog\/fifo_w32_d2_A.v",
+      "impl\/verilog\/interval_normalizati.v",
+      "impl\/verilog\/interval_normalizdEe.v",
+      "impl\/verilog\/interval_normalizdEe_rom.dat",
+      "impl\/verilog\/peak_detection.v",
+      "impl\/verilog\/peak_detection_bubkb.v",
+      "impl\/verilog\/start_for_computercU.v",
+      "impl\/verilog\/start_for_intervaqcK.v",
+      "impl\/verilog\/feature_extractor_ip.v"
+    ],
+    "Misc": ["impl\/misc\/logo.png"],
+    "Subcore": [
+      "impl\/misc\/feature_extractor_ip_ap_dadd_3_full_dsp_64_ip.tcl",
+      "impl\/misc\/feature_extractor_ip_ap_dmul_3_max_dsp_64_ip.tcl",
+      "impl\/misc\/feature_extractor_ip_ap_faddfsub_2_full_dsp_32_ip.tcl",
+      "impl\/misc\/feature_extractor_ip_ap_fcmp_0_no_dsp_32_ip.tcl",
+      "impl\/misc\/feature_extractor_ip_ap_fdiv_10_no_dsp_32_ip.tcl",
+      "impl\/misc\/feature_extractor_ip_ap_fmul_1_max_dsp_32_ip.tcl",
+      "impl\/misc\/feature_extractor_ip_ap_fpext_0_no_dsp_32_ip.tcl",
+      "impl\/misc\/feature_extractor_ip_ap_fptrunc_0_no_dsp_64_ip.tcl",
+      "impl\/misc\/feature_extractor_ip_ap_fsub_2_full_dsp_32_ip.tcl",
+      "impl\/misc\/feature_extractor_ip_ap_sitofp_2_no_dsp_32_ip.tcl"
+    ],
+    "DesignXml": "E:\/SEU\/Graduation_Prj\/FIRIn2Features\/solution1\/.autopilot\/db\/feature_extractor_ip.design.xml",
+    "DebugDir": "E:\/SEU\/Graduation_Prj\/FIRIn2Features\/solution1\/.debug",
+    "ProtoInst": ["E:\/SEU\/Graduation_Prj\/FIRIn2Features\/solution1\/.debug\/feature_extractor_ip.protoinst"]
+  },
+  "SubcoreInfo": {
+    "HasXpmMemory": false,
+    "HasClockedDsp": false,
+    "IP": [
+      {
+        "name": "feature_extractor_ip_ap_dadd_3_full_dsp_64",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Add CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 3 CONFIG.c_mult_usage Full_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name feature_extractor_ip_ap_dadd_3_full_dsp_64 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Add_Subtract CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "feature_extractor_ip_ap_dmul_3_max_dsp_64",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 3 CONFIG.c_mult_usage Max_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name feature_extractor_ip_ap_dmul_3_max_dsp_64 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Multiply CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "feature_extractor_ip_ap_faddfsub_2_full_dsp_32",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 2 CONFIG.c_mult_usage Full_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name feature_extractor_ip_ap_faddfsub_2_full_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Add_Subtract CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "feature_extractor_ip_ap_fcmp_0_no_dsp_32",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 0 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 1 CONFIG.c_result_fraction_width 0 CONFIG.component_name feature_extractor_ip_ap_fcmp_0_no_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken false CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Compare CONFIG.result_precision_type Custom CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "feature_extractor_ip_ap_fdiv_10_no_dsp_32",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 10 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name feature_extractor_ip_ap_fdiv_10_no_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Divide CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "feature_extractor_ip_ap_fmul_1_max_dsp_32",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 1 CONFIG.c_mult_usage Max_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name feature_extractor_ip_ap_fmul_1_max_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Multiply CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "feature_extractor_ip_ap_fpext_0_no_dsp_32",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 0 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name feature_extractor_ip_ap_fpext_0_no_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken false CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Float_to_Float CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "feature_extractor_ip_ap_fptrunc_0_no_dsp_64",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 0 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name feature_extractor_ip_ap_fptrunc_0_no_dsp_64 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken false CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Float_to_Float CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "feature_extractor_ip_ap_fsub_2_full_dsp_32",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Subtract CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 2 CONFIG.c_mult_usage Full_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name feature_extractor_ip_ap_fsub_2_full_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Add_Subtract CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "feature_extractor_ip_ap_sitofp_2_no_dsp_32",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Custom CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 32 CONFIG.c_a_fraction_width 0 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 2 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name feature_extractor_ip_ap_sitofp_2_no_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Fixed_to_Float CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
+      }
+    ]
+  },
+  "Interfaces": {
+    "ap_clk": {
+      "type": "clock",
+      "ctype": {"CLK": {"Type": "bool"}},
+      "bundle_name": "ap_clk",
+      "bundle_role": "default",
+      "buses": "fir_in_V features_out_V",
+      "reset": "ap_rst_n"
+    },
+    "ap_ctrl": {
+      "type": "ap_ctrl",
+      "ctrl_ports": "ap_start ap_done ap_ready ap_idle",
+      "ctype": {
+        "start": {"Type": "bool"},
+        "done": {"Type": "bool"},
+        "ready": {"Type": "bool"},
+        "idle": {"Type": "bool"}
+      }
+    },
+    "ap_rst_n": {
+      "type": "reset",
+      "polarity": "ACTIVE_LOW",
+      "ctype": {"RST": {"Type": "bool"}},
+      "bundle_name": "ap_rst_n",
+      "bundle_role": "default"
+    },
+    "features_out_V": {
+      "type": "axi4stream",
+      "mode": "master",
+      "port_prefix": "features_out_V",
+      "has_tready": "1",
+      "ctype": {
+        "TDATA": {
+          "Type": "real float",
+          "Width": "32"
+        },
+        "TVALID": {"Type": "bool"},
+        "TREADY": {"Type": "bool"}
+      },
+      "port_width": {"TDATA": "32"}
+    },
+    "fir_in_V": {
+      "type": "axi4stream",
+      "mode": "slave",
+      "port_prefix": "fir_in_V",
+      "has_tready": "1",
+      "ctype": {
+        "TDATA": {
+          "Type": "real float",
+          "Width": "32"
+        },
+        "TVALID": {"Type": "bool"},
+        "TREADY": {"Type": "bool"}
+      },
+      "port_width": {"TDATA": "32"}
+    }
+  },
+  "RtlPorts": {
+    "fir_in_V_TDATA": {
+      "dir": "in",
+      "width": "32"
+    },
+    "fir_in_V_TVALID": {
+      "dir": "in",
+      "width": "1"
+    },
+    "fir_in_V_TREADY": {
+      "dir": "out",
+      "width": "1"
+    },
+    "features_out_V_TDATA": {
+      "dir": "out",
+      "width": "32"
+    },
+    "features_out_V_TVALID": {
+      "dir": "out",
+      "width": "1"
+    },
+    "features_out_V_TREADY": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_clk": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_rst_n": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_start": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_done": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_ready": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_idle": {
+      "dir": "out",
+      "width": "1"
+    }
+  },
+  "ModuleInfo": {
+    "Hierarchy": {
+      "ModuleName": "feature_extractor_ip",
+      "Instances": [
+        {
+          "ModuleName": "compute_features",
+          "InstanceName": "compute_features_U0"
+        },
+        {
+          "ModuleName": "interval_normalizati",
+          "InstanceName": "interval_normalizati_U0"
+        },
+        {
+          "ModuleName": "peak_detection",
+          "InstanceName": "peak_detection_U0"
+        }
+      ]
+    },
+    "Info": {
+      "peak_detection": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "interval_normalizati": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "compute_features": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "feature_extractor_ip": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      }
+    },
+    "Metrics": {
+      "peak_detection": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "6.969"
+        },
+        "Loops": [{
+            "Name": "Loop 1",
+            "TripCount": "",
+            "Latency": "",
+            "PipelineII": "",
+            "PipelineDepthMin": "6",
+            "PipelineDepthMax": "446",
+            "PipelineDepth": "6 ~ 446",
+            "Loops": [{
+                "Name": "Loop 1.1",
+                "TripCount": "",
+                "LatencyMin": "4",
+                "LatencyMax": "443",
+                "Latency": "4 ~ 443",
+                "PipelineII": "",
+                "PipelineDepth": "4"
+              }]
+          }],
+        "Area": {
+          "BRAM_18K": "2",
+          "DSP48E": "0",
+          "FF": "265",
+          "LUT": "655",
+          "URAM": "0"
+        }
+      },
+      "interval_normalizati": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "8.588"
+        },
+        "Loops": [{
+            "Name": "Loop 1",
+            "TripCount": "",
+            "Latency": "",
+            "PipelineII": "",
+            "PipelineDepthMin": "2",
+            "PipelineDepthMax": "7206",
+            "PipelineDepth": "2 ~ 7206",
+            "Loops": [{
+                "Name": "Loop 1.1",
+                "TripCount": "200",
+                "Latency": "7200",
+                "PipelineII": "",
+                "PipelineDepth": "36"
+              }]
+          }],
+        "Area": {
+          "BRAM_18K": "1",
+          "DSP48E": "7",
+          "FF": "1784",
+          "LUT": "3478",
+          "URAM": "0"
+        }
+      },
+      "compute_features": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "8.588"
+        },
+        "Loops": [
+          {
+            "Name": "Loop 1",
+            "TripCount": "200",
+            "Latency": "200",
+            "PipelineII": "",
+            "PipelineDepth": "1"
+          },
+          {
+            "Name": "Loop 2",
+            "TripCount": "199",
+            "Latency": "1393",
+            "PipelineII": "",
+            "PipelineDepth": "7"
+          },
+          {
+            "Name": "Loop 3",
+            "TripCount": "100",
+            "Latency": "900",
+            "PipelineII": "",
+            "PipelineDepth": "9"
+          },
+          {
+            "Name": "Loop 4",
+            "TripCount": "79",
+            "Latency": "237",
+            "PipelineII": "",
+            "PipelineDepth": "3"
+          },
+          {
+            "Name": "Loop 5",
+            "TripCount": "",
+            "Latency": "",
+            "PipelineII": "",
+            "PipelineDepth": "18"
+          }
+        ],
+        "Area": {
+          "BRAM_18K": "3",
+          "DSP48E": "19",
+          "FF": "2693",
+          "LUT": "4633",
+          "URAM": "0"
+        }
+      },
+      "feature_extractor_ip": {
+        "Latency": {
+          "LatencyBest": "",
+          "LatencyAvg": "",
+          "LatencyWorst": "",
+          "PipelineII": "",
+          "PipelineDepth": "",
+          "PipelineType": "dataflow"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "8.588"
+        },
+        "Area": {
+          "BRAM_18K": "6",
+          "DSP48E": "26",
+          "FF": "4752",
+          "LUT": "8833",
+          "URAM": "0"
+        }
+      }
+    }
+  },
+  "Sdx": {
+    "Target": "none",
+    "ProfileOption": "0",
+    "ProfileType": "none",
+    "XO": "",
+    "KernelName": "feature_extractor_ip",
+    "EnableXoSwEmu": "1"
+  },
+  "GenData": {
+    "DataVersion": "0.2",
+    "Time": "2025-03-26 16:19:58 +0800",
+    "ToolName": "vivado_hls",
+    "ToolVersion": "2019.1"
+  }
+}

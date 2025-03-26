@@ -1,0 +1,121 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'feature_extractor_ip'" level="0">
+<item name = "Date">Wed Mar 26 15:57:08 2025
+</item>
+<item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
+<item name = "Project">FIRIn2Features</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 8.588, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="compute_features_U0">compute_features, ?, ?, ?, ?, none</column>
+<column name="interval_normalizati_U0">interval_normalizati, ?, ?, ?, ?, none</column>
+<column name="peak_detection_U0">peak_detection, ?, ?, ?, ?, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 1, -</column>
+<column name="FIFO">0, -, 10, 66, -</column>
+<column name="Instance">6, 26, 4742, 8766, 0</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, -, -</column>
+<column name="Register">-, -, -, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">2, 11, 4, 16, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="compute_features_U0">compute_features, 3, 19, 2693, 4633, 0</column>
+<column name="interval_normalizati_U0">interval_normalizati, 1, 7, 1784, 3478, 0</column>
+<column name="peak_detection_U0">peak_detection, 2, 0, 265, 655, 0</column>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+<column name="normalized_stream_V_U">0, 5, 0, -, 2, 32, 64</column>
+<column name="peak_loc_stream_V_V_U">0, 5, 0, -, 2, 10, 20</column>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="ap_idle">and, 0, 0, 1, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="fir_in_V_TDATA">in, 32, axis, fir_in_V, pointer</column>
+<column name="fir_in_V_TVALID">in, 1, axis, fir_in_V, pointer</column>
+<column name="fir_in_V_TREADY">out, 1, axis, fir_in_V, pointer</column>
+<column name="features_out_V_TDATA">out, 32, axis, features_out_V, pointer</column>
+<column name="features_out_V_TVALID">out, 1, axis, features_out_V, pointer</column>
+<column name="features_out_V_TREADY">in, 1, axis, features_out_V, pointer</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, feature_extractor_ip, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, feature_extractor_ip, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, feature_extractor_ip, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, feature_extractor_ip, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, feature_extractor_ip, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, feature_extractor_ip, return value</column>
+</table>
+</item>
+</section>
+</profile>

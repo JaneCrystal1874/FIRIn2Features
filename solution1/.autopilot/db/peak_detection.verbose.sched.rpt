@@ -1,0 +1,240 @@
+
+
+================================================================
+== Vivado HLS Report for 'peak_detection'
+================================================================
+* Date:           Wed Mar 26 15:57:06 2025
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        FIRIn2Features
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg400-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     6.969|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+-----+-----+----------+-----------+-----------+---------+----------+
+        |             |  Latency  | Iteration|  Initiation Interval  |   Trip  |          |
+        |  Loop Name  | min | max |  Latency |  achieved |   target  |  Count  | Pipelined|
+        +-------------+-----+-----+----------+-----------+-----------+---------+----------+
+        |- Loop 1     |    ?|    ?|  6 ~ 446 |          -|          -|        ?|    no    |
+        | + Loop 1.1  |    4|  443|         4|          -|          -| 1 ~ 110 |    no    |
+        +-------------+-----+-----+----------+-----------+-----------+---------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 6 
+4 --> 5 
+5 --> 6 
+6 --> 3 2 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.46>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i10* %peak_loc_stream_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str49, i32 0, i32 0, [1 x i8]* @p_str50, [1 x i8]* @p_str51, [1 x i8]* @p_str52, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str53, [1 x i8]* @p_str54)"   --->   Operation 7 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %in_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind"   --->   Operation 8 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%buf_buffer = alloca [512 x float], align 4" [FIRIn2Features/FIRIn2Features.cpp:28]   --->   Operation 9 'alloca' 'buf_buffer' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 512> <RAM>
+ST_1 : Operation 10 [1/1] (0.46ns)   --->   "br label %1" [FIRIn2Features/FIRIn2Features.cpp:31]   --->   Operation 10 'br' <Predicate = true> <Delay = 0.46>
+
+State 2 <SV = 1> <Delay = 2.77>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%t_V = phi i9 [ 0, %0 ], [ %buf_wr_ptr_V, %.critedge ]"   --->   Operation 11 'phi' 't_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%tmp = call i1 @_ssdm_op_NbReadReq.axis.floatP(float* %in_V, i32 1)" [FIRIn2Features/FIRIn2Features.cpp:31]   --->   Operation 12 'nbreadreq' 'tmp' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "br i1 %tmp, label %2, label %6" [FIRIn2Features/FIRIn2Features.cpp:31]   --->   Operation 13 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%tmp_9 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %in_V)" [FIRIn2Features/FIRIn2Features.cpp:33]   --->   Operation 14 'read' 'tmp_9' <Predicate = (tmp)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%zext_ln544 = zext i9 %t_V to i64" [FIRIn2Features/FIRIn2Features.cpp:15->FIRIn2Features/FIRIn2Features.cpp:34]   --->   Operation 15 'zext' 'zext_ln544' <Predicate = (tmp)> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%buf_buffer_addr = getelementptr [512 x float]* %buf_buffer, i64 0, i64 %zext_ln544" [FIRIn2Features/FIRIn2Features.cpp:15->FIRIn2Features/FIRIn2Features.cpp:34]   --->   Operation 16 'getelementptr' 'buf_buffer_addr' <Predicate = (tmp)> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (2.77ns)   --->   "store float %tmp_9, float* %buf_buffer_addr, align 4" [FIRIn2Features/FIRIn2Features.cpp:15->FIRIn2Features/FIRIn2Features.cpp:34]   --->   Operation 17 'store' <Predicate = (tmp)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 512> <RAM>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%zext_ln112 = zext i9 %t_V to i10" [FIRIn2Features/FIRIn2Features.cpp:31]   --->   Operation 18 'zext' 'zext_ln112' <Predicate = (tmp)> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (1.36ns)   --->   "%add_ln700 = add i10 1, %zext_ln112" [FIRIn2Features/FIRIn2Features.cpp:16->FIRIn2Features/FIRIn2Features.cpp:34]   --->   Operation 19 'add' 'add_ln700' <Predicate = (tmp)> <Delay = 1.36> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.31> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 20 [1/1] (1.36ns)   --->   "%add_ln891 = add i9 1, %t_V" [FIRIn2Features/FIRIn2Features.cpp:17->FIRIn2Features/FIRIn2Features.cpp:34]   --->   Operation 20 'add' 'add_ln891' <Predicate = (tmp)> <Delay = 1.36> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.31> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%tmp_2 = call i1 @_ssdm_op_BitSelect.i1.i10.i32(i10 %add_ln700, i32 9)" [FIRIn2Features/FIRIn2Features.cpp:17->FIRIn2Features/FIRIn2Features.cpp:34]   --->   Operation 21 'bitselect' 'tmp_2' <Predicate = (tmp)> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.72ns)   --->   "%buf_wr_ptr_V = select i1 %tmp_2, i9 0, i9 %add_ln891" [FIRIn2Features/FIRIn2Features.cpp:17->FIRIn2Features/FIRIn2Features.cpp:34]   --->   Operation 22 'select' 'buf_wr_ptr_V' <Predicate = (tmp)> <Delay = 0.72> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%tmp_V_1 = zext i9 %buf_wr_ptr_V to i10" [FIRIn2Features/FIRIn2Features.cpp:17->FIRIn2Features/FIRIn2Features.cpp:34]   --->   Operation 23 'zext' 'tmp_V_1' <Predicate = (tmp)> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%zext_ln215 = zext i9 %buf_wr_ptr_V to i11" [FIRIn2Features/FIRIn2Features.cpp:21->FIRIn2Features/FIRIn2Features.cpp:42]   --->   Operation 24 'zext' 'zext_ln215' <Predicate = (tmp)> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%bitcast_ln43 = bitcast float %tmp_9 to i32" [FIRIn2Features/FIRIn2Features.cpp:43]   --->   Operation 25 'bitcast' 'bitcast_ln43' <Predicate = (tmp)> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%trunc_ln43 = trunc i32 %bitcast_ln43 to i23" [FIRIn2Features/FIRIn2Features.cpp:43]   --->   Operation 26 'trunc' 'trunc_ln43' <Predicate = (tmp)> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (2.02ns)   --->   "%icmp_ln43_1 = icmp eq i23 %trunc_ln43, 0" [FIRIn2Features/FIRIn2Features.cpp:43]   --->   Operation 27 'icmp' 'icmp_ln43_1' <Predicate = (tmp)> <Delay = 2.02> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.02> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 28 [1/1] (0.46ns)   --->   "br label %3" [FIRIn2Features/FIRIn2Features.cpp:40]   --->   Operation 28 'br' <Predicate = (tmp)> <Delay = 0.46>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "ret void" [FIRIn2Features/FIRIn2Features.cpp:54]   --->   Operation 29 'ret' <Predicate = (!tmp)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 6.41>
+ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%i_0 = phi i7 [ 1, %2 ], [ %i, %5 ]"   --->   Operation 30 'phi' 'i_0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%zext_ln40 = zext i7 %i_0 to i10" [FIRIn2Features/FIRIn2Features.cpp:40]   --->   Operation 31 'zext' 'zext_ln40' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 32 [1/1] (1.06ns)   --->   "%icmp_ln40 = icmp ult i7 %i_0, -17" [FIRIn2Features/FIRIn2Features.cpp:40]   --->   Operation 32 'icmp' 'icmp_ln40' <Predicate = true> <Delay = 1.06> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.02> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1, i64 110, i64 55)"   --->   Operation 33 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 34 [1/1] (0.00ns)   --->   "br i1 %icmp_ln40, label %4, label %.loopexit" [FIRIn2Features/FIRIn2Features.cpp:40]   --->   Operation 34 'br' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 35 [1/1] (1.36ns)   --->   "%add_ln42 = add i10 %tmp_V_1, %zext_ln40" [FIRIn2Features/FIRIn2Features.cpp:42]   --->   Operation 35 'add' 'add_ln42' <Predicate = (icmp_ln40)> <Delay = 1.36> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.31> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%zext_ln215_1 = zext i10 %add_ln42 to i11" [FIRIn2Features/FIRIn2Features.cpp:21->FIRIn2Features/FIRIn2Features.cpp:42]   --->   Operation 36 'zext' 'zext_ln215_1' <Predicate = (icmp_ln40)> <Delay = 0.00>
+ST_3 : Operation 37 [1/1] (1.41ns)   --->   "%ret_V = sub i11 %zext_ln215, %zext_ln215_1" [FIRIn2Features/FIRIn2Features.cpp:21->FIRIn2Features/FIRIn2Features.cpp:42]   --->   Operation 37 'sub' 'ret_V' <Predicate = (icmp_ln40)> <Delay = 1.41> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.31> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 38 [1/1] (1.48ns)   --->   "%ret_V_1 = add i11 512, %ret_V" [FIRIn2Features/FIRIn2Features.cpp:21->FIRIn2Features/FIRIn2Features.cpp:42]   --->   Operation 38 'add' 'ret_V_1' <Predicate = (icmp_ln40)> <Delay = 1.48> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.31> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%tmp_6 = call i1 @_ssdm_op_BitSelect.i1.i11.i32(i11 %ret_V_1, i32 10)" [FIRIn2Features/FIRIn2Features.cpp:21->FIRIn2Features/FIRIn2Features.cpp:42]   --->   Operation 39 'bitselect' 'tmp_6' <Predicate = (icmp_ln40)> <Delay = 0.00>
+ST_3 : Operation 40 [1/1] (0.00ns)   --->   "%trunc_ln1372 = trunc i11 %ret_V_1 to i9" [FIRIn2Features/FIRIn2Features.cpp:21->FIRIn2Features/FIRIn2Features.cpp:42]   --->   Operation 40 'trunc' 'trunc_ln1372' <Predicate = (icmp_ln40)> <Delay = 0.00>
+ST_3 : Operation 41 [1/1] (0.00ns)   --->   "%p_and_f = call i11 @_ssdm_op_BitConcatenate.i11.i2.i9(i2 0, i9 %trunc_ln1372)" [FIRIn2Features/FIRIn2Features.cpp:21->FIRIn2Features/FIRIn2Features.cpp:42]   --->   Operation 41 'bitconcatenate' 'p_and_f' <Predicate = (icmp_ln40)> <Delay = 0.00>
+ST_3 : Operation 42 [1/1] (0.00ns)   --->   "%trunc_ln1372_1 = trunc i11 %ret_V to i9" [FIRIn2Features/FIRIn2Features.cpp:21->FIRIn2Features/FIRIn2Features.cpp:42]   --->   Operation 42 'trunc' 'trunc_ln1372_1' <Predicate = (icmp_ln40)> <Delay = 0.00>
+ST_3 : Operation 43 [1/1] (1.36ns)   --->   "%sub_ln1372 = sub i9 0, %trunc_ln1372_1" [FIRIn2Features/FIRIn2Features.cpp:21->FIRIn2Features/FIRIn2Features.cpp:42]   --->   Operation 43 'sub' 'sub_ln1372' <Predicate = (icmp_ln40)> <Delay = 1.36> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.31> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 44 [1/1] (0.00ns)   --->   "%p_and_t = call i11 @_ssdm_op_BitConcatenate.i11.i2.i9(i2 0, i9 %sub_ln1372)" [FIRIn2Features/FIRIn2Features.cpp:21->FIRIn2Features/FIRIn2Features.cpp:42]   --->   Operation 44 'bitconcatenate' 'p_and_t' <Predicate = (icmp_ln40)> <Delay = 0.00>
+ST_3 : Operation 45 [1/1] (1.48ns)   --->   "%sub_ln1372_1 = sub i11 0, %p_and_t" [FIRIn2Features/FIRIn2Features.cpp:21->FIRIn2Features/FIRIn2Features.cpp:42]   --->   Operation 45 'sub' 'sub_ln1372_1' <Predicate = (icmp_ln40)> <Delay = 1.48> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.31> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 46 [1/1] (0.79ns)   --->   "%select_ln1372 = select i1 %tmp_6, i11 %sub_ln1372_1, i11 %p_and_f" [FIRIn2Features/FIRIn2Features.cpp:21->FIRIn2Features/FIRIn2Features.cpp:42]   --->   Operation 46 'select' 'select_ln1372' <Predicate = (icmp_ln40)> <Delay = 0.79> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 47 [1/1] (0.00ns)   --->   "%tmp_3 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %bitcast_ln43, i32 23, i32 30)" [FIRIn2Features/FIRIn2Features.cpp:43]   --->   Operation 47 'partselect' 'tmp_3' <Predicate = (icmp_ln40)> <Delay = 0.00>
+ST_3 : Operation 48 [1/1] (1.31ns)   --->   "%icmp_ln43 = icmp ne i8 %tmp_3, -1" [FIRIn2Features/FIRIn2Features.cpp:43]   --->   Operation 48 'icmp' 'icmp_ln43' <Predicate = (icmp_ln40)> <Delay = 1.31> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.02> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 49 [1/1] (0.80ns)   --->   "%or_ln43 = or i1 %icmp_ln43_1, %icmp_ln43" [FIRIn2Features/FIRIn2Features.cpp:43]   --->   Operation 49 'or' 'or_ln43' <Predicate = (icmp_ln40)> <Delay = 0.80> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 50 [1/1] (3.40ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i10P(i10* %peak_loc_stream_V_V, i10 %tmp_V_1)" [FIRIn2Features/FIRIn2Features.cpp:51]   --->   Operation 50 'write' <Predicate = (!icmp_ln40)> <Delay = 3.40> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_3 : Operation 51 [1/1] (0.00ns)   --->   "br label %.critedge" [FIRIn2Features/FIRIn2Features.cpp:52]   --->   Operation 51 'br' <Predicate = (!icmp_ln40)> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 2.77>
+ST_4 : Operation 52 [1/1] (0.00ns)   --->   "%zext_ln544_1 = zext i7 %i_0 to i64" [FIRIn2Features/FIRIn2Features.cpp:21->FIRIn2Features/FIRIn2Features.cpp:41]   --->   Operation 52 'zext' 'zext_ln544_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 53 [1/1] (0.00ns)   --->   "%buf_buffer_addr_1 = getelementptr [512 x float]* %buf_buffer, i64 0, i64 %zext_ln544_1" [FIRIn2Features/FIRIn2Features.cpp:21->FIRIn2Features/FIRIn2Features.cpp:41]   --->   Operation 53 'getelementptr' 'buf_buffer_addr_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 54 [2/2] (2.77ns)   --->   "%prev = load float* %buf_buffer_addr_1, align 4" [FIRIn2Features/FIRIn2Features.cpp:21->FIRIn2Features/FIRIn2Features.cpp:41]   --->   Operation 54 'load' 'prev' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 512> <RAM>
+ST_4 : Operation 55 [1/1] (0.00ns)   --->   "%sext_ln544 = sext i11 %select_ln1372 to i64" [FIRIn2Features/FIRIn2Features.cpp:21->FIRIn2Features/FIRIn2Features.cpp:42]   --->   Operation 55 'sext' 'sext_ln544' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 56 [1/1] (0.00ns)   --->   "%buf_buffer_addr_2 = getelementptr [512 x float]* %buf_buffer, i64 0, i64 %sext_ln544" [FIRIn2Features/FIRIn2Features.cpp:21->FIRIn2Features/FIRIn2Features.cpp:42]   --->   Operation 56 'getelementptr' 'buf_buffer_addr_2' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 57 [2/2] (2.77ns)   --->   "%next = load float* %buf_buffer_addr_2, align 4" [FIRIn2Features/FIRIn2Features.cpp:21->FIRIn2Features/FIRIn2Features.cpp:42]   --->   Operation 57 'load' 'next' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 512> <RAM>
+
+State 5 <SV = 4> <Delay = 6.96>
+ST_5 : Operation 58 [1/2] (2.77ns)   --->   "%prev = load float* %buf_buffer_addr_1, align 4" [FIRIn2Features/FIRIn2Features.cpp:21->FIRIn2Features/FIRIn2Features.cpp:41]   --->   Operation 58 'load' 'prev' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 512> <RAM>
+ST_5 : Operation 59 [1/2] (2.77ns)   --->   "%next = load float* %buf_buffer_addr_2, align 4" [FIRIn2Features/FIRIn2Features.cpp:21->FIRIn2Features/FIRIn2Features.cpp:42]   --->   Operation 59 'load' 'next' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 512> <RAM>
+ST_5 : Operation 60 [1/1] (0.00ns)   --->   "%bitcast_ln43_1 = bitcast float %prev to i32" [FIRIn2Features/FIRIn2Features.cpp:43]   --->   Operation 60 'bitcast' 'bitcast_ln43_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 61 [1/1] (0.00ns)   --->   "%tmp_4 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %bitcast_ln43_1, i32 23, i32 30)" [FIRIn2Features/FIRIn2Features.cpp:43]   --->   Operation 61 'partselect' 'tmp_4' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 62 [1/1] (0.00ns)   --->   "%trunc_ln43_1 = trunc i32 %bitcast_ln43_1 to i23" [FIRIn2Features/FIRIn2Features.cpp:43]   --->   Operation 62 'trunc' 'trunc_ln43_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 63 [1/1] (1.31ns)   --->   "%icmp_ln43_2 = icmp ne i8 %tmp_4, -1" [FIRIn2Features/FIRIn2Features.cpp:43]   --->   Operation 63 'icmp' 'icmp_ln43_2' <Predicate = true> <Delay = 1.31> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.02> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 64 [1/1] (2.02ns)   --->   "%icmp_ln43_3 = icmp eq i23 %trunc_ln43_1, 0" [FIRIn2Features/FIRIn2Features.cpp:43]   --->   Operation 64 'icmp' 'icmp_ln43_3' <Predicate = true> <Delay = 2.02> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.02> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 65 [2/2] (4.19ns)   --->   "%tmp_5 = fcmp oge float %tmp_9, %prev" [FIRIn2Features/FIRIn2Features.cpp:43]   --->   Operation 65 'fcmp' 'tmp_5' <Predicate = true> <Delay = 4.19> <Core = "FCmp">   --->   Core 111 'FCmp' <Latency = 1> <II = 1> <Delay = 4.19> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 66 [1/1] (0.00ns)   --->   "%bitcast_ln43_2 = bitcast float %next to i32" [FIRIn2Features/FIRIn2Features.cpp:43]   --->   Operation 66 'bitcast' 'bitcast_ln43_2' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 67 [1/1] (0.00ns)   --->   "%tmp_7 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %bitcast_ln43_2, i32 23, i32 30)" [FIRIn2Features/FIRIn2Features.cpp:43]   --->   Operation 67 'partselect' 'tmp_7' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 68 [1/1] (0.00ns)   --->   "%trunc_ln43_2 = trunc i32 %bitcast_ln43_2 to i23" [FIRIn2Features/FIRIn2Features.cpp:43]   --->   Operation 68 'trunc' 'trunc_ln43_2' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 69 [1/1] (1.31ns)   --->   "%icmp_ln43_4 = icmp ne i8 %tmp_7, -1" [FIRIn2Features/FIRIn2Features.cpp:43]   --->   Operation 69 'icmp' 'icmp_ln43_4' <Predicate = true> <Delay = 1.31> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.02> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 70 [1/1] (2.02ns)   --->   "%icmp_ln43_5 = icmp eq i23 %trunc_ln43_2, 0" [FIRIn2Features/FIRIn2Features.cpp:43]   --->   Operation 70 'icmp' 'icmp_ln43_5' <Predicate = true> <Delay = 2.02> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.02> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 71 [2/2] (4.19ns)   --->   "%tmp_8 = fcmp oge float %tmp_9, %next" [FIRIn2Features/FIRIn2Features.cpp:43]   --->   Operation 71 'fcmp' 'tmp_8' <Predicate = true> <Delay = 4.19> <Core = "FCmp">   --->   Core 111 'FCmp' <Latency = 1> <II = 1> <Delay = 4.19> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 5.79>
+ST_6 : Operation 72 [1/1] (0.00ns) (grouped into LUT with out node or_ln43_3)   --->   "%or_ln43_1 = or i1 %icmp_ln43_3, %icmp_ln43_2" [FIRIn2Features/FIRIn2Features.cpp:43]   --->   Operation 72 'or' 'or_ln43_1' <Predicate = (icmp_ln40)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 73 [1/1] (0.00ns) (grouped into LUT with out node or_ln43_3)   --->   "%and_ln43 = and i1 %or_ln43, %or_ln43_1" [FIRIn2Features/FIRIn2Features.cpp:43]   --->   Operation 73 'and' 'and_ln43' <Predicate = (icmp_ln40)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 74 [1/2] (4.19ns)   --->   "%tmp_5 = fcmp oge float %tmp_9, %prev" [FIRIn2Features/FIRIn2Features.cpp:43]   --->   Operation 74 'fcmp' 'tmp_5' <Predicate = (icmp_ln40)> <Delay = 4.19> <Core = "FCmp">   --->   Core 111 'FCmp' <Latency = 1> <II = 1> <Delay = 4.19> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 75 [1/1] (0.00ns) (grouped into LUT with out node or_ln43_3)   --->   "%and_ln43_1 = and i1 %and_ln43, %tmp_5" [FIRIn2Features/FIRIn2Features.cpp:43]   --->   Operation 75 'and' 'and_ln43_1' <Predicate = (icmp_ln40)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 76 [1/1] (0.00ns) (grouped into LUT with out node and_ln43_3)   --->   "%or_ln43_2 = or i1 %icmp_ln43_5, %icmp_ln43_4" [FIRIn2Features/FIRIn2Features.cpp:43]   --->   Operation 76 'or' 'or_ln43_2' <Predicate = (icmp_ln40)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 77 [1/1] (0.00ns) (grouped into LUT with out node and_ln43_3)   --->   "%and_ln43_2 = and i1 %or_ln43, %or_ln43_2" [FIRIn2Features/FIRIn2Features.cpp:43]   --->   Operation 77 'and' 'and_ln43_2' <Predicate = (icmp_ln40)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 78 [1/2] (4.19ns)   --->   "%tmp_8 = fcmp oge float %tmp_9, %next" [FIRIn2Features/FIRIn2Features.cpp:43]   --->   Operation 78 'fcmp' 'tmp_8' <Predicate = (icmp_ln40)> <Delay = 4.19> <Core = "FCmp">   --->   Core 111 'FCmp' <Latency = 1> <II = 1> <Delay = 4.19> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 79 [1/1] (0.80ns) (out node of the LUT)   --->   "%and_ln43_3 = and i1 %and_ln43_2, %tmp_8" [FIRIn2Features/FIRIn2Features.cpp:43]   --->   Operation 79 'and' 'and_ln43_3' <Predicate = (icmp_ln40)> <Delay = 0.80> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 80 [1/1] (0.80ns) (out node of the LUT)   --->   "%or_ln43_3 = or i1 %and_ln43_1, %and_ln43_3" [FIRIn2Features/FIRIn2Features.cpp:43]   --->   Operation 80 'or' 'or_ln43_3' <Predicate = (icmp_ln40)> <Delay = 0.80> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 81 [1/1] (0.00ns)   --->   "br i1 %or_ln43_3, label %.critedge.loopexit, label %5" [FIRIn2Features/FIRIn2Features.cpp:43]   --->   Operation 81 'br' <Predicate = (icmp_ln40)> <Delay = 0.00>
+ST_6 : Operation 82 [1/1] (1.31ns)   --->   "%i = add i7 %i_0, 1" [FIRIn2Features/FIRIn2Features.cpp:40]   --->   Operation 82 'add' 'i' <Predicate = (icmp_ln40 & !or_ln43_3)> <Delay = 1.31> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.31> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 83 [1/1] (0.00ns)   --->   "br label %3" [FIRIn2Features/FIRIn2Features.cpp:40]   --->   Operation 83 'br' <Predicate = (icmp_ln40 & !or_ln43_3)> <Delay = 0.00>
+ST_6 : Operation 84 [1/1] (0.00ns)   --->   "br label %.critedge"   --->   Operation 84 'br' <Predicate = (icmp_ln40 & or_ln43_3)> <Delay = 0.00>
+ST_6 : Operation 85 [1/1] (0.00ns)   --->   "br label %1" [FIRIn2Features/FIRIn2Features.cpp:53]   --->   Operation 85 'br' <Predicate = (or_ln43_3) | (!icmp_ln40)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 0.466ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('tmp.V') with incoming values : ('buf.wr_ptr.V', FIRIn2Features/FIRIn2Features.cpp:17->FIRIn2Features/FIRIn2Features.cpp:34) [8]  (0.466 ns)
+
+ <State 2>: 2.77ns
+The critical path consists of the following:
+	'phi' operation ('tmp.V') with incoming values : ('buf.wr_ptr.V', FIRIn2Features/FIRIn2Features.cpp:17->FIRIn2Features/FIRIn2Features.cpp:34) [8]  (0 ns)
+	'getelementptr' operation ('buf_buffer_addr', FIRIn2Features/FIRIn2Features.cpp:15->FIRIn2Features/FIRIn2Features.cpp:34) [14]  (0 ns)
+	'store' operation ('store_ln15', FIRIn2Features/FIRIn2Features.cpp:15->FIRIn2Features/FIRIn2Features.cpp:34) of variable 'tmp', FIRIn2Features/FIRIn2Features.cpp:33 on array 'buf.buffer', FIRIn2Features/FIRIn2Features.cpp:28 [15]  (2.77 ns)
+
+ <State 3>: 6.41ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', FIRIn2Features/FIRIn2Features.cpp:40) [28]  (0 ns)
+	'add' operation ('idx', FIRIn2Features/FIRIn2Features.cpp:42) [37]  (1.36 ns)
+	'sub' operation ('ret.V', FIRIn2Features/FIRIn2Features.cpp:21->FIRIn2Features/FIRIn2Features.cpp:42) [39]  (1.42 ns)
+	'sub' operation ('sub_ln1372', FIRIn2Features/FIRIn2Features.cpp:21->FIRIn2Features/FIRIn2Features.cpp:42) [45]  (1.36 ns)
+	'sub' operation ('sub_ln1372_1', FIRIn2Features/FIRIn2Features.cpp:21->FIRIn2Features/FIRIn2Features.cpp:42) [47]  (1.48 ns)
+	'select' operation ('select_ln1372', FIRIn2Features/FIRIn2Features.cpp:21->FIRIn2Features/FIRIn2Features.cpp:42) [48]  (0.793 ns)
+
+ <State 4>: 2.77ns
+The critical path consists of the following:
+	'getelementptr' operation ('buf_buffer_addr_1', FIRIn2Features/FIRIn2Features.cpp:21->FIRIn2Features/FIRIn2Features.cpp:41) [35]  (0 ns)
+	'load' operation ('prev', FIRIn2Features/FIRIn2Features.cpp:21->FIRIn2Features/FIRIn2Features.cpp:41) on array 'buf.buffer', FIRIn2Features/FIRIn2Features.cpp:28 [36]  (2.77 ns)
+
+ <State 5>: 6.97ns
+The critical path consists of the following:
+	'load' operation ('prev', FIRIn2Features/FIRIn2Features.cpp:21->FIRIn2Features/FIRIn2Features.cpp:41) on array 'buf.buffer', FIRIn2Features/FIRIn2Features.cpp:28 [36]  (2.77 ns)
+	'fcmp' operation ('tmp_5', FIRIn2Features/FIRIn2Features.cpp:43) [62]  (4.2 ns)
+
+ <State 6>: 5.8ns
+The critical path consists of the following:
+	'fcmp' operation ('tmp_8', FIRIn2Features/FIRIn2Features.cpp:43) [71]  (4.2 ns)
+	'and' operation ('and_ln43_3', FIRIn2Features/FIRIn2Features.cpp:43) [72]  (0.8 ns)
+	'or' operation ('or_ln43_3', FIRIn2Features/FIRIn2Features.cpp:43) [73]  (0.8 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
